@@ -2,95 +2,151 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progate</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Can I see You now?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/plugin/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'cpe5khq',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="header-left">
-                <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-            </div>
-            <span class="fa fa-bars menu-icon"></span>
-            <div class="header-right">
-                <a href="#">レッスン</a>
-                <a href="#">新規登録</a>
-                <a href="#" class="login">ログイン</a>
-            </div>
-        </div>
-    </header>
-    <div class="top-wrapper">
-        <div class="container">
-            <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-            <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-            <div class="btn-wrapper">
-                <a href="#" class="btn signup">新規登録はこちら</a>
-                <p>or</p>
-                <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-                <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-            </div>
+    <div class="white-space"></div>
+    <div class="background-img">
+        <div class="top-title">
+            Can<br>
+            I see<br>
+            You now?
         </div>
     </div>
-    <div class="lesson-wrapper">
-        <div class="container">
-            <div class="heading">
-                <h2>Learn Where to Get Started!</h2>
+
+
+    <div class="content">
+        <div class="title">
+            Outline
+        </div>
+        <div class="sub-title">
+            _TO GET CLOSER...
+        </div>
+
+        <p class="document">
+            2020年、人々は物理的な距離によって強烈に隔てられました。
+            今、私たちはどうやって人に会うことができるのでしょう？<br>
+            私たちは一つの試みとして、あるセッションを設計しています。<br>
+            近日中の発表を目指し、途中経過を報告します。<br>
+            <span class="annotation">
+                本ページはオンラインプレイ可能な
+                PCアプリケーションです。
+            </span>
+        </p>
+
+        <div class="video-content">
+            <p class="play-video-session">Trailer</p>
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/462286339" width="640" height="360" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <p>
+                    <a href="https://vimeo.com/462286339">Can I see You now? | Trailer</a> from <a
+                        href="https://vimeo.com/user124010196">Yuto Hayashi</a> on <a href="https://vimeo.com">Vimeo
+                    </a>
+                </p>
             </div>
-            <div class="lessons">
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="https://prog-8.com/images/html/advanced/html.png">
-                        <p>HTML & CSS</p>
-                    </div>
-                    <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-                </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-                        <p>jQuery</p>
-                    </div>
-                    <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。
-                        アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-                </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="https://prog-8.com/images/html/advanced/ruby.png">
-                        <p>Ruby</p>
-                    </div>
-                    <p class="text-contents">オープンソースの動的なプログラミング言語で、
-                        シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-                </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="https://prog-8.com/images/html/advanced/php.png">
-                        <p>PHP</p>
-                    </div>
-                    <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+            <div class="video-caption">
+                <div class="video-title">Can I see You now?</div>
+                <div class="video-stuff">
+                    Artist : Yuto Hayashi<br>
+                    Engineer : Tabi Morinaga<br>
                 </div>
             </div>
-            <div class="clear"></div>
+            <div class="video-bottom-margin"></div>
+        </div>
+        <div class="sub-title">_WHAT IS THE SESSION?</div>
+        <div class="document">
+            このセッションではGoogleStreetViewのバーチャルな空間の中で、離れている知り合いに会いにいきます。<br>
+            オンラインで2人がアプリケーションに接続すると、ボイスチャットが開始されます。その中で1人が自分のよく知っている街の座標を入力すると、2人はそれぞれその街のどこかに出現します。<br>
+            そこからボイスチャットでお互いの見えているものを伝え合いながら、再開することを目指します。
+        </div>
+
+
+        <div class="title">
+            PlayNow!
+        </div>
+        <p class="document">
+            <a class="link" href="download/index.html">
+                ->アプリダウンロードページ（PC専用)
+            </a><br>
+            プレイ時間:約15分 / サイズ:約160MB<br>
+            *本作品は2人でプレイするPCオンラインアプリです。お誘い合わせの上プレイしてください。<br>
+        </p>
+
+
+        <div class="title">
+            EventAndArchive
+        </div>
+        <div class="sub-title">
+            _SCHEDULE
+        </div>
+        <p class="document">
+            10/17(Sat.)_20:00~<br>
+            10/18(Sun.)_20:00~<br>
+            ごめんなさい、都合により予定が変更される場合があります。<br>
+            <a class="link" href="https://www.youtube.com/watch?v=oDOmtB9zTI0" target="_blank">
+                ->ライブ配信
+            </a><br>
+            実際のプレイを配信します。このページでは他にもアーカイブやドキュメント、関連リンクなどを随時追加更新していきます。
+        </p>
+
+
+        <!-- <div class="title">
+            Document
+        </div>
+        <div class="sub-title">
+            _AFTER THE TRAVEL
+        </div>
+        <p class="document caption">
+            2019年の夏、僕はユーラシア大陸横断の旅をした。
+            沢木耕太郎の深夜特急への憧れに駆動された、いわゆる貧乏旅行だった。ボロボロになりながらも行く先々で様々な人に助けられて、50年前に彼が歩いた旅路の幾らかをなぞって行った。
+            50年のうちに最も大きく変わったことといえば、やはりスマートフォンとインターネットだろう。
+            旅人は誰でもGoogleMapで目的地を検索してルートを探すようになり、自分の身体の在り処よりもGoogleMapの視点が先行するようになった。
+            また、出会った人々とSNSを交換するようになり、一期一会という言葉の意味合いも大きく変わった。
+            ある街を過ぎ去っても、そこで出会った人が今何をしているのか知ることができたし、その気になれば連絡を取ってもう一度会いに行くことも、いつだってそれほど難しいことではなかった。
+            そしてそういう時にはもちろん、待ち合わせにはGoogleMapを使う。ロンドンのパブで、ドイツの田舎駅で、トルコの海岸で、そうやって僕は旅で出会った人や昔からの友人たちと再会を果たした。
+            良い悪いに関わらず、この時代に旅をして人と出会うというのはそういうことだった。<br>
+            <br>
+            しかしそんな旅から半年と少しが経って、全く誰も予想できなかったことに、世界は大きく状況を変えてしまった。僕らは確かにインターネットで繋がっていたけれども、もはや会いに行くことは叶わなくなってしまった。彼らとの間にある物理的な距離が、どうしようもなく決定的に僕らを隔てた。
+            その時僕は、今もう一度彼らに会いに行きたいと思った。<br>
+            <br>
+            それがこのプロジェクトの発端である。<br>
+            まずは試みとして、GoogleStreetViewとZOOMを用いて彼らの家まで会いに行くことをした。
+            彼らとは会話をしたのも旅以来だったけれど皆とても温かく僕を迎えてくれ、家まで着くとZOOMを通して家族を紹介してくれたり近況について話してくれたりした。それは本当に感動的なくらいで、人と出会い直すということの新しい可能性を感じさせるものだった。このオンラインアプリケーションはその発展として、それを体験可能な形にパッケージしたものである。
+            しかし果たして、僕たちは今一体どれだけ離れていて、どれだけ近づくことができたのだろうか。ここまでプロジェクトを進めながら、今もなお考え続けている。<br>
+            <br>
+            -林 裕人（ディレクター）
+        </p> -->
+
+    </div>
+    <div class="about-us">
+        <div>
+            About Us | Artist : 林 裕人/Yuto Hayashi 東京藝術大学修士メディア映像研究科
+            <a href="https://twitter.com/hyasssy" target="_blank">
+                Instagram
+            </a>
+            <a href="https://www.instagram.com/hyasssy/?hl=ja" target="_blank">
+                Twitter
+            </a>
+            | Engineer : 森永 旅/Tabi Morinaga 東京藝術大学学部器楽科
+            <a href="https://twitter.com/goma_recorder" target="_blank">Twitter</a>
         </div>
     </div>
-    <div class="message-wrapper">
-        <div class="container">
-            <div class="heading">
-                <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-                <h3>Let's learn to code, learn to be creative!</h3>
-            </div>
-            <span class="btn message">さっそく開発する</span>
-        </div>
-    </div>
-    <footer>
-        <div class="container">
-            <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-            <p>Learn to Code, Learn to be Creative.</p>
-        </div>
-    </footer>
 </body>
 
 </html>
