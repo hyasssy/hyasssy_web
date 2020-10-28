@@ -26,14 +26,15 @@ body {
 a {
   color: rgb(127, 202, 234);
 }
-.header {
+#header {
   position: absolute;
   top:0px;
   left:1px;
   color: rgb(127, 202, 234);
   float: left;
+  display: inline;
 }
-.header-title {
+#header-title {
   font-size: 25px;
   line-height: 25px;
   font-weight: 500;
@@ -41,6 +42,7 @@ a {
   font-family: futura-pt;
 }
 .header-list{
+display: inline;
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
