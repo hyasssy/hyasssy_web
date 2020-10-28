@@ -42,13 +42,19 @@ a {
   font-family: futura-pt;
 }
 .header-list{
-display: inline;
+  display: inline;
+  margin-left: 1.5rem;
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: 0px;
   font-family: futura-pt;
 }
+
+
+
+
+
 .background-img {
   position: relative;
   background-image: url("../img/topView.png");
