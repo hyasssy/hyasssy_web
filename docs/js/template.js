@@ -3,7 +3,7 @@ function header(type) {
     var html = "";
     html += '<div class="header">';
     if (type == 'top') {
-        html += '<a id="header-title" href="index.html" target="_top">Yuto Hayashi</a>';
+        html += '<a id="header-title" href="index.html" target="_top">Yuto&nbsp;Hayashi</a>';
         html += '<div class="header-list">';
         html += '<a href="works/index.html" target="_top">works</a>';
         html += '<a href="news/index.html" target="_top">news</a>';
