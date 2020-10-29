@@ -19,20 +19,13 @@ body, html {
   font-family: Quicksand;
   letter-spacing: 2px;
   color: rgb(84, 89, 90);
+  background-color: rgb(252, 253, 252);
   font-family: "a-otf-futo-go-b101-pr6n";
 }
-body {
 
+a{
+  text-decoration:none;
 }
-#container{
-  width: 100%;
-  position: relative;
-  height: auto !important;
-  height: 100%;
-  min-height: 100%;
-  background-color: rgb(252, 253, 252);
-}
-
 a:link {
   transition: 0.3s;
   color: rgb(127, 202, 234);
@@ -43,20 +36,35 @@ a:hover{
 a:visited{
   color: rgb(127, 202, 234);
 }
-#header {
+.header{
+  /*border: double;
+  border-color: black;
+  background: red;*/
+  position:fixed;
   top:0;
-  left:1px;
-  display: inline;
+  margin-left:2px;
+  margin-bottom: 2px;
+  height: 25px;
+  width: 100%;
+  display:flex;
+  align-items: flex-end;/*下揃え*/
+  background: linear-gradient(
+  180deg,
+  rgba(252,253,252,1) 0%,
+  rgba(252,253,252,0.3) 100%
+);
+  z-index:1000;
 }
 #header-title {
   font-size: 25px;
-  line-height: 25px;
   font-weight: 500;
   letter-spacing: 1.5px;
   font-family: futura-pt;
 }
 .header-list{
-  display: inline;
+  display: flex;
+}
+.header-list a{
   margin-left: 1.5rem;
   font-size: 20px;
   line-height: 25px;
@@ -66,104 +74,10 @@ a:visited{
 }
 
 
-
-
-
-.background-img {
-  position: relative;
-  background-image: url("../img/topView.png");
-  height: calc(100% - 1.2rem);
-  margin-right: 0.6rem;
-  margin-left: 0.6rem;
-  /* background-attachment: fixed; */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#contents {
-  margin-left: 4.6rem;
-  margin-right: 4.6rem;
-}
-.title {
-  position: relative;
-  font-size: 25px;
-  line-height: 25px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  font-family: "futura-pt";
-}
-.sub-title {
-  font-family: "Moon";
-  margin-top: -4px;
-  font-size: 1.2rem;
-  letter-spacing: 0px;
-}
-.document {
-  font-family: "a-otf-futo-go-b101-pr6n";
-  line-height: 2rem;
-  font-size: 1.5rem;
-  letter-spacing: 0.5px;
-  margin-top: 3rem;
-  margin-bottom: 10rem;
-}
-.annotation {
-  font-size: 1.5rem;
-  font-family: "fot-tsukuardgothic-std";
-}
-.video-content {
-  margin-left: -4rem;
-  margin-right: -4rem;
-  font-family: "sofia-pro";
-  font-weight: 300;
-  letter-spacing: 0.4px;
-}
-.play-video-session {
-  font-size: 1.5rem;
-  /*margin-top: 30rem;*/
-  margin-bottom: -1.5rem;
-}
-.video {
-  position: relative;
-  height: 0;
-  padding: 30px 0 56.25%;
-  overflow: hidden;
-}
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.video-caption {
-  float: right;
-  clear: both;
-}
-.video-title {
-  margin-top: -1.1rem;
-  font-size: 2.5rem;
-  margin-bottom: 0.1rem;
-  margin-right: 0rem;
-}
-.video-stuff {
-  font-size: 1.5rem;
-  line-height: 1.4rem;
-}
-.video-bottom-margin {
-  height: 30rem;
-}
-.caption {
-  font-family: "AppliMincho";
-}
-
-
-
 #copyright {
-  position:absolute;
-  bottom:0;
+  margin-top: 30rem;
+  bottom: 2px;
   width: 100%;
-  margin: 0 auto;
   text-align: center;
   font-size: 1rem;
   color: rgb(180,180,180);
