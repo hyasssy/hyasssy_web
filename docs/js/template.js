@@ -1,17 +1,26 @@
 // テンプレート
 function header(type){
 var html = "";
+html += '<div class="header">';
+if(type == 'top'){
+html += '<a id="header-title" href="index.html" target="_top">Yuto Hayashi</a>';
+html += '<div class="header-list">';
+html += '<a href="works/index.html" target="_top">works</a>';
+html += '<a href="news/index.html" target="_top">news</a>';
+html += '<a href="cv/index.html" target="_top">cv</a>';
+html += '<a href="contact/index.html" target="_top">contact?</a>';
+}else{
+html += '<a id="header-title" href="../index.html" target="_top">Yuto Hayashi</a>';
+html += '<div class="header-list">';
 var works = type == 'works' ? 'WORKS' : 'works';
 var news = type == 'news' ? 'NEWS' : 'news';
 var cv = type == 'cv' ? 'CV' : 'cv';
 var contact = type == 'contact' ? 'CONTACT?' : 'contact?';
-html += '<div class="header">';
-html += '<a id="header-title" href="https://hyasssy.tokyo" target="_top">Yuto Hayashi</a>';
-html += '<div class="header-list">';
-html += '<a href="https://hyasssy.tokyo/works" target="_top">' + works + '</a>';
-html += '<a href="https://hyasssy.tokyo/news" target="_top">'+ news + '</a>';
-html += '<a href="https://hyasssy.tokyo/cv" target="_top">' + cv + '</a>';
-html += '<a href="https://hyasssy.tokyo/contact" target="_top">' + contact + '</a>';
+html += '<a href="../works/index.html" target="_top">' + works + '</a>';
+html += '<a href="../news/index.html" target="_top">'+ news + '</a>';
+html += '<a href="../cv/index.html" target="_top">' + cv + '</a>';
+html += '<a href="../contact/index.html" target="_top">' + contact + '</a>';
+}
 html += '</div>';
 html += '</div>';
 document.write(html);
