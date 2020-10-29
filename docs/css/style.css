@@ -13,7 +13,7 @@
   src: url(../fonts/AppliMincho.otf);
 }
 
-.html, body{
+html, body{
   /*overflow: hidden;*/
 }
 .header{
