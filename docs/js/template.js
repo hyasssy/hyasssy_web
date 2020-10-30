@@ -46,6 +46,6 @@ function thumbnail(link, imgsrc) {
     document.write(html);
 }
 function workthumbnail() {
-    thumbnail('../index.html', '../img/topimg1.jpg');
     thumbnail('../index.html', '../img/topimg2.jpg');
+    thumbnail('../index.html', '../img/topimg1.jpg');
 }

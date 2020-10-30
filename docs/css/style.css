@@ -1,5 +1,4 @@
 /*Topページのcss*/
-@import url("https://fonts.googleapis.com/css?family=Quicksand");
 @font-face {
   font-family: "Osaka";
   src: url(../fonts/Osaka.ttf);
@@ -14,7 +13,7 @@
 }
 
 html, body{
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 .header{
   background: rgb(252,253,252) !important;
@@ -74,7 +73,7 @@ html, body{
   letter-spacing: 0px;
 }
 .document {
-  font-family: "a-otf-futo-go-b101-pr6n";
+  font-family: "a-otf-gothic-bbb-pr6n";
   line-height: 2rem;
   font-size: 1.5rem;
   letter-spacing: 0.5px;
