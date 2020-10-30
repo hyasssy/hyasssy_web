@@ -1,4 +1,7 @@
 /*worksページのcss*/
+body, html{
+  opacity: 1 !important;
+}
 .works-contents{
   display:flex;
   justify-content: space-between;
@@ -7,7 +10,6 @@
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
-
 .thumbnail{
   width: 20%;
 }

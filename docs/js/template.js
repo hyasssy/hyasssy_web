@@ -5,7 +5,7 @@ function header(type) {
     if (type == 'top') {
         html += '<a id="header-title" href="index.html" target="_top">Yuto&nbsp;Hayashi</a>';
         html += '<div class="header-list">';
-        html += '<a href="works/index.html" target="_top">works</a>';
+        html += '<a href="works/caniseeyounow.html" target="_top">works</a>';
         html += '<a href="news/index.html" target="_top">news</a>';
         html += '<a href="cv/index.html" target="_top">cv</a>';
         html += '<a href="contact/index.html" target="_top">contact?</a>';
@@ -16,7 +16,7 @@ function header(type) {
         var news = type == 'news' ? 'NEWS' : 'news';
         var cv = type == 'cv' ? 'CV' : 'cv';
         var contact = type == 'contact' ? 'CONTACT?' : 'contact?';
-        html += '<a href="../works/index.html" target="_top">' + works + '</a>';
+        html += '<a href="../works/caniseeyounow.html" target="_top">' + works + '</a>';
         html += '<a href="../news/index.html" target="_top">' + news + '</a>';
         html += '<a href="../cv/index.html" target="_top">' + cv + '</a>';
         html += '<a href="../contact/index.html" target="_top">' + contact + '</a>';
@@ -46,6 +46,20 @@ function thumbnail(link, imgsrc) {
     document.write(html);
 }
 function workthumbnail() {
-    thumbnail('../index.html', '../img/topimg2.jpg');
-    thumbnail('../index.html', '../img/topimg1.jpg');
+    thumbnail('../y2020_caniseeyounow.html', '../img/y2020_caniseeyounow/img4.jpg');
+    thumbnail('../y2020_iwanttogetclosemore.html', '../img/y2020_iwanttogetclosemore/thumbnail.jpg');
+    thumbnail('../y2020_lumiererule.html', '../img/y2020_lumiererule/thumbnail.jpg');
+    thumbnail('../y2020_followingthesun_photo.html', '../img/y2020_followingthesun_photo/img1.jpg');
+    thumbnail('../y2020_thumbnail.html', '../img/y2020_koko/img1.jpg');
+    thumbnail('../y2020_isyourbodyyours.html', '../img/y2020_isyourbodyyours/img6.jpg');
+    thumbnail('../y2019_selfportrait.html', '../img/y2019_selfportrait/img1.jpg');
+    thumbnail('../y2019_practicetowalk.html', '../img/y2019_practicetowalk/img4.jpg');
+    thumbnail('../y2019_followingthesun.html', '../img/y2019_followingthesun/img1.jpg');
+    thumbnail('../y2019_sowhoami.html', '../img/y2019_sowhoami/img1.jpg');
+    thumbnail('../y2019_eupcaccia.html', '../img/y2019_eupcaccia/img3.jpg');
+    thumbnail('../y2019_osorubeki.html', '../img/y2019_osorubeki/img1.jpg');
+    thumbnail('../y2018_japanesefaces.html', '../img/y2018_japanesefaces/img1.jpg');
+    thumbnail('../y2017_secretplace.html', '../img/y2017_secretplace/img1.jpg');
+    thumbnail('../y2017_paint.html', '../img/y2017_paint/img1.jpg');
+    thumbnail('../y2015_omatsurisawagi.html', '../img/y2015_omatsurisawagi/img1.jpg');
 }
