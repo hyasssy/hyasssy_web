@@ -13,7 +13,7 @@
 
 .square-frame{
   width: 100%;
-  padding-bottom: 17%;
+  padding-bottom: 2.5rem;
   opacity: 0.55;
   transition: 0.5s;
 }
@@ -27,7 +27,6 @@
 .thumbnail-caption{
   float: right;/*右揃え、高さをなくす*/
   text-align: right;/*右揃え*/
-  word-break: break-all;/*文字の途中でも改行*/
   width: 100%;
   opacity:0;
   transition: 0.3s;
@@ -36,7 +35,10 @@
 .square-frame:hover, :active{
   opacity: 1;
 }
-.square-frame:hover, :active .thumbnail-caption{
+.square-frame:hover .thumbnail-caption{
+  opacity: 1;
+}
+.square-frame:active .thumbnail-caption{
   opacity: 1;
 }
 

@@ -41,12 +41,7 @@ body::after {
 
 /*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
 
-body.fadeout::after {
-  opacity: 1;
-}
-
-/*fadeinクラスをaddすることで表示*/
-.fadein{
+body.fadeinout::after {
   opacity: 1;
 }
 
