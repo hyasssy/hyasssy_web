@@ -1,17 +1,21 @@
-// テンプレート
+// ヘッダーとコピーライトのテンプレート
 function header(type) {
     var html = "";
     html += '<div class="header">';
     if (type == 'top') {
-        html += '<a id="header-title" href="index.html">Yuto&nbsp;Hayashi</a>';
+        html += '<span class="header-title">Yuto&nbsp;Hayashi</span>';
         html += '<div class="header-list">';
         html += '<a href="works/y2020_caniseeyounow.html">works</a>';
         html += '<a href="news/index.html">news</a>';
         html += '<a href="cv/index.html">cv</a>';
         html += '<a href="contact/index.html">contact?</a>';
     } else {
-        html += '<a id="header-title" href="../index.html">Yuto Hayashi</a>';
+        html += '<a class="header-title" href="../index.html">Yuto Hayashi</a>';
         html += '<div class="header-list">';
+        if (type == 'works') {
+
+        }
+
         var works = type == 'works' ? 'WORKS' : 'works';
         var news = type == 'news' ? 'NEWS' : 'news';
         var cv = type == 'cv' ? 'CV' : 'cv';
