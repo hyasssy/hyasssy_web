@@ -3,7 +3,12 @@
 ▼次にやること
 ・works_template.jsを編集。
 ・works>キャプションの右にメディアを書く
+https://allabout.co.jp/gm/gc/406310/
 ・スマホ版を2カラム構造にして、リストページも作る。
 
 ・cv、コンタクトを簡単に埋める
 ・キャプションを作る
+
+▼参考
+・高田冬彦
+http://fuyuhikotakata.com/works/Dream%20Catcher
