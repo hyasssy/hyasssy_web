@@ -50,8 +50,11 @@ a{
   transition: 0.3s;
   color: rgb(57, 100, 194);
 }
+a:link, a:visited{
+  color: rgb(57, 100, 194);
+}
 a:hover, a:active{
-  color: rgb(127, 202, 234);
+  color: rgb(101, 149, 233);
 }
 
 .header{
@@ -73,7 +76,14 @@ a:hover, a:active{
     rgba(252,253,252,0.3) 100%
   );
   z-index:1000;
-  color: rgb(57, 100, 194);
+  color: rgb(84, 89, 90);
+}
+
+.header a:link, .header a:visited{
+  color: rgb(84, 89, 90);
+}
+.header a:hover, .header a:active{
+  color: rgb(101, 149, 233);
 }
 
 .header-list-container{
@@ -96,13 +106,16 @@ a:hover, a:active{
   font-size: 1.2rem;
   font-family: roboto;
   font-weight: 300;
-  color: rgb(160,160,160);
+  color: rgb(140,140,140);
 }
 .copyright a{
-  color: rgb(160,160,160);
+  color: rgb(140,140,140);
+}
+.copyright a:link, .copyright a:visited{
+  color: rgb(140,140,140);
 }
 .copyright a:hover, .copyright a:active{
-  color: rgb(120,120,120);
+  color: rgb(57, 100, 194);
 }
 
 @media screen and (min-width:1024px){/*画面が大きい時*/
