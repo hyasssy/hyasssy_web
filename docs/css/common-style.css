@@ -10,6 +10,10 @@
   font-family: "AppliMincho";
   src: url(../fonts/AppliMincho.otf);
 }
+:root{
+  --linkblue: rgb(77, 123, 223);
+  --hoverblue: rgb(108, 169, 223);
+}
 body, html {
   margin: 0;
   padding: 0;
@@ -18,7 +22,8 @@ body, html {
   letter-spacing: 1px;
   color: rgb(84, 89, 90);
   background-color: rgb(252, 253, 252);
-  font-family: a-otf-gothic-bbb-pr6n;
+  font-family: sofia-pro, a-otf-gothic-bbb-pr6n, sans-serif;
+  font-weight: 300;
 }
 
 body::after {
@@ -48,13 +53,13 @@ body.fadeinout::after {
 a{
   text-decoration:none;
   transition: 0.3s;
-  color: rgb(57, 100, 194);
+  color: var(--linkblue);
 }
 a:link, a:visited{
-  color: rgb(57, 100, 194);
+  color: var(--linkblue);
 }
 a:hover, a:active{
-  color: rgb(101, 149, 233);
+  color: var(--hoverblue);
 }
 
 .header{
@@ -62,8 +67,8 @@ a:hover, a:active{
   top:0;
   margin-left:2px;
   margin-bottom: 1px;
-  font-size: 2.5rem;
-  line-height: 2.6rem;
+  font-size: 2.2rem;
+  line-height: 2.3rem;
   font-weight: 500;
   letter-spacing: 1px;
   font-family: futura-pt;
@@ -76,35 +81,36 @@ a:hover, a:active{
     rgba(252,253,252,0.3) 100%
   );
   z-index:1000;
-  color: rgb(57, 100, 194);
+  color: var(--linkblue);
 }
 
 .header a:link, .header a:visited{
-  color: rgb(57, 100, 194);
+  color: var(--linkblue);
 }
 .header a:hover, .header a:active{
-  color: rgb(101, 149, 233);
+  color: var(--hoverblue);
 }
 
 .header-list-container{
   display: flex;
 }
 .header-list{
-  margin-left: 1.5rem;
   bottom: 0;
-  font-size: 20px;
+  font-size: 1.9rem;
+  margin-left: 1.3rem;
   font-weight: 400;
   letter-spacing: 0px;
   font-family: futura-pt;
 }
 
 .copyright {
-  margin-top: 30rem;
-  bottom: 2px;
+  margin-top: 20rem;
+  bottom: 1px;
   width: 100%;
   text-align: center;
-  font-size: 1.2rem;
-  font-family: roboto, sans-serif;
+  font-size: 1rem;
+  font-family: jaf-bernina-sans, sans-serif;
+  letter-spacing: 1px;
   font-weight: 300;
   color: rgb(140,140,140);
 }
@@ -115,29 +121,27 @@ a:hover, a:active{
   color: rgb(140,140,140);
 }
 .copyright a:hover, .copyright a:active{
-  color: rgb(57, 100, 194);
+  color: var(--hoverblue);
 }
-
-@media screen and (min-width:1024px){/*画面が大きい時*/
+@media screen and (min-width:480px){/*タブレットサイズ以上*/
+  .header{
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+  }
+  .header-list{
+    font-size: 2rem;
+    margin-left: 1.5rem;
+  }
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width:896px){/*pcサイズ以上*/
   .header{
     font-size: 3rem;
     line-height: 3.1rem;
   }
   .header-list{
     font-size: 2.4rem;
-  }
-}
-
-@media screen and (max-width:480px){/*画面が小さい時*/
-  .header{
-    font-size: 2.2rem;
-    line-height: 2.3rem;
-  }
-  .header-list{
-    font-size: 1.9rem;
-    margin-left: 1.3rem;
-  }
-  .copyright {
-    font-size: 1rem;
   }
 }

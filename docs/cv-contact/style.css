@@ -1,0 +1,63 @@
+/*css of CV page*/
+.cv-contents{
+  padding-top: 5rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+.self-introduction-container {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 4.5rem;
+}
+.self-introduction-photo img{
+  width: 10rem;
+  margin-right: 2rem;
+}
+.self-introduction-contact{
+    bottom: 0;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+.self-introduction-text{
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.9rem;
+  font-size: 1.4rem;
+  max-width: 32rem;
+  margin-bottom: 4.5rem;
+}
+.cv-text{
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-family: source-han-sans-japanese;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+
+}
+.langborder{
+    margin: 10rem 0;
+    border-bottom: 1px solid rgb(177, 188, 190);
+}
+@media screen and (min-width:480px){/*タブレットサイズ以降*/
+  .cv-contents{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.self-introduction-contact{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+
+}
+    .cv-text{
+        font-size: 1.3rem;
+        line-height: 2rem;
+  }
+
+}
+@media screen and (min-width:896px){/*PCサイズ以降*/
+.cv-contents{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+}
