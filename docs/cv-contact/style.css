@@ -1,12 +1,11 @@
-/*css of CV page*/
-.cv-contents{
-  padding-top: 5rem;
+/*css of CV&CONTENTS? page*/
+.cvcontact-contents{
+  padding-top: 6rem;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
 .self-introduction-container {
     display: flex;
-    align-items: flex-end;
     width: 100%;
     margin-bottom: 4.5rem;
 }
@@ -15,7 +14,7 @@
   margin-right: 2rem;
 }
 .self-introduction-contact{
-    bottom: 0;
+    margin-top: 2rem;/*高さを合わせる*/
     font-size: 1.3rem;
     line-height: 1.5rem;
 }
@@ -40,7 +39,8 @@
     border-bottom: 1px solid rgb(177, 188, 190);
 }
 @media screen and (min-width:480px){/*タブレットサイズ以降*/
-  .cv-contents{
+  .cvcontact-contents{
+    padding-top: 8rem;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -56,7 +56,8 @@
 
 }
 @media screen and (min-width:896px){/*PCサイズ以降*/
-.cv-contents{
+.cvcontact-contents{
+  padding-top: 10rem;
   margin-left: 25%;
   margin-right: 25%;
 }

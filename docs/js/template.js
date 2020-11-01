@@ -10,7 +10,7 @@ function header(type) {
         html += '<div class="header-list-container">';
         html += '<a class ="header-list" href="' + url_works + '">works</a>';
         html += '<a class ="header-list" href="news/index.html">news</a>';
-        html += '<a class ="header-list" href="cv-contact/index.html">cv&contact</a>';
+        html += '<a class ="header-list" href="cv-contact/index.html">cv&contact?</a>';
     } else {
         html += '<a href="../index.html">Yuto&nbsp;Hayashi</a>';
         html += '<div class="header-list-container">';
