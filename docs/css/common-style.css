@@ -76,11 +76,11 @@ a:hover, a:active{
     rgba(252,253,252,0.3) 100%
   );
   z-index:1000;
-  color: rgb(84, 89, 90);
+  color: rgb(57, 100, 194);
 }
 
 .header a:link, .header a:visited{
-  color: rgb(84, 89, 90);
+  color: rgb(57, 100, 194);
 }
 .header a:hover, .header a:active{
   color: rgb(101, 149, 233);
@@ -104,7 +104,7 @@ a:hover, a:active{
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
-  font-family: roboto;
+  font-family: roboto, sans-serif;
   font-weight: 300;
   color: rgb(140,140,140);
 }
