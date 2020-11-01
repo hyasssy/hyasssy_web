@@ -45,19 +45,13 @@
   opacity:0;
   transition: 0.3s;
 }
-.square-frame:hover, :active{
+.square-frame:hover, .square-frame:active{
   opacity: 1;
 }
-.square-frame:hover .thumbnail-caption{
+.square-frame:hover .thumbnail-caption, .square-frame:active .thumbnail-caption{
   opacity: 1;
 }
-.square-frame:active .thumbnail-caption{
-  opacity: 1;
-}
-.square-frame:hover .thumbnail-media{
-  opacity: 1;
-}
-.square-frame:active .thumbnail-media{
+.square-frame:hover .thumbnail-media, .square-frame:active .thumbnail-media{
   opacity: 1;
 }
 
@@ -66,7 +60,7 @@
   /*background-color: yellow;*/
 }
 .article-container{
-  margin-left: 5%;
+  margin-left: 1.5rem;/*0.6rem; 2カラム完成したらここ戻す。*/
   margin-right: 0%;
 }
 @media screen and (min-width:700px){/*画面が大きい時*/

@@ -18,7 +18,7 @@ body, html {
   letter-spacing: 1px;
   color: rgb(84, 89, 90);
   background-color: rgb(252, 253, 252);
-  font-family: "a-otf-gothic-bbb-pr6n";
+  font-family: a-otf-gothic-bbb-pr6n;
 }
 
 body::after {
@@ -28,7 +28,7 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:#fff;  /* 背景カラー */
+  background-color: rgb(252, 253, 252);  /* 背景カラー */
   z-index: 9999;  /* 一番手前に */
   pointer-events: none;  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
   opacity: 0;  /* 初期値では非表示 */
@@ -50,9 +50,6 @@ a{
   transition: 0.3s;
   color: rgb(57, 100, 194);
 }
-a:link, a:hover{
-  color: rgb(57, 100, 194);
-}
 a:hover, a:active{
   color: rgb(127, 202, 234);
 }
@@ -61,9 +58,12 @@ a:hover, a:active{
   position:fixed;
   top:0;
   margin-left:2px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   font-size: 2.5rem;
   line-height: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: futura-pt;
   width: 100%;
   display:flex;
   align-items: flex-end;/*下揃え*/
@@ -74,11 +74,6 @@ a:hover, a:active{
   );
   z-index:1000;
   color: rgb(57, 100, 194);
-}
-.header-title {
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-family: futura-pt;
 }
 
 .header-list-container{
@@ -91,6 +86,23 @@ a:hover, a:active{
   font-weight: 400;
   letter-spacing: 0px;
   font-family: futura-pt;
+}
+
+.copyright {
+  margin-top: 30rem;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: roboto;
+  font-weight: 300;
+  color: rgb(160,160,160);
+}
+.copyright a{
+  color: rgb(160,160,160);
+}
+.copyright a:hover, .copyright a:active{
+  color: rgb(120,120,120);
 }
 
 @media screen and (min-width:1024px){/*画面が大きい時*/
@@ -110,23 +122,9 @@ a:hover, a:active{
   }
   .header-list{
     font-size: 1.9rem;
+    margin-left: 1.3rem;
   }
-}
-
-.copyright {
-  margin-top: 30rem;
-  bottom: 2px;
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  color: rgb(180,180,180);
-}
-.copyright a{
-  color: rgb(180,180,180);
-}
-.copyright a:link{
-  color: rgb(180,180,180);
-}
-.copyright a:hover, a:active{
-  color: rgb(140,140,140);
+  .copyright {
+    font-size: 1rem;
+  }
 }

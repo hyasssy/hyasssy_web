@@ -6,14 +6,14 @@ function header(type) {
     var html = "";
     html += '<div class="header">';
     if (type == 'top') {
-        html += '<div class="header-title">Yuto&nbsp;Hayashi</div>';
+        html += '<div>Yuto&nbsp;Hayashi</div>';
         html += '<div class="header-list-container">';
         html += '<a class ="header-list" href="' + url_works + '">works</a>';
         html += '<a class ="header-list" href="news/index.html">news</a>';
         html += '<a class ="header-list" href="cv/index.html">cv</a>';
         html += '<a class ="header-list" href="contact/index.html">contact?</a>';
     } else {
-        html += '<a class="header-title" href="../index.html">Yuto&nbsp;Hayashi</a>';
+        html += '<a href="../index.html">Yuto&nbsp;Hayashi</a>';
         html += '<div class="header-list-container">';
         if (type == 'works') {
             html += '<div class ="header-list">WORKS</div>';
