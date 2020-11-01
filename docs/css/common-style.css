@@ -50,12 +50,13 @@ a{
   transition: 0.3s;
   color: rgb(57, 100, 194);
 }
-a:link {
+a:link, a:hover{
   color: rgb(57, 100, 194);
 }
 a:hover, a:active{
   color: rgb(127, 202, 234);
 }
+
 .header{
   position:fixed;
   top:0;
@@ -69,22 +70,21 @@ a:hover, a:active{
   background: linear-gradient(
     180deg,
     rgba(252,253,252,1) 0%,
-   rgba(252,253,252,0.3) 100%
+    rgba(252,253,252,0.3) 100%
   );
   z-index:1000;
+  color: rgb(57, 100, 194);
 }
 .header-title {
   font-weight: 500;
   letter-spacing: 1px;
   font-family: futura-pt;
-  color: rgb(97, 162, 234);
 }
 
 .header-list-container{
   display: flex;
 }
 .header-list{
-  color: rgb(97, 162, 234);
   margin-left: 1.5rem;
   bottom: 0;
   font-size: 20px;

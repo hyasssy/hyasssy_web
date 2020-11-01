@@ -26,6 +26,11 @@ html, body{
    margin-right: 0.6rem;
    color: black;
 }
+@media screen and (max-width:480px){/*画面が小さい時*/
+  .slideshow{
+    height: calc(100% - 1.2rem);
+  }
+}
 .slideshow img {
    position: absolute;
    top: 0;

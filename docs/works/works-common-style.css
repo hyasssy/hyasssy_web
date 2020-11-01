@@ -107,15 +107,17 @@
   width: 100%;
 }
 
-
 .caption{
   float: right;
+  margin-top: 3rem;
   font-family: "sofia-pro";
-  background-color: red;
+  /*background-color: red;*/
   font-size: 1.5rem;
+  font-weight: 300;
 }
 .caption-title{
   font-size: 2.5rem;
+  font-weight: 500;
 }
 
 .video-content {
