@@ -1,29 +1,40 @@
 // ヘッダーとコピーライトのテンプレート
+
+var url_works = 'works/y2020_caniseeyounow.html';//worksページのトップ作品URL
+
 function header(type) {
     var html = "";
     html += '<div class="header">';
     if (type == 'top') {
-        html += '<span class="header-title">Yuto&nbsp;Hayashi</span>';
-        html += '<div class="header-list">';
-        html += '<a href="works/y2020_caniseeyounow.html">works</a>';
-        html += '<a href="news/index.html">news</a>';
-        html += '<a href="cv/index.html">cv</a>';
-        html += '<a href="contact/index.html">contact?</a>';
+        html += '<div class="header-title">Yuto&nbsp;Hayashi</div>';
+        html += '<div class="header-list-container">';
+        html += '<a class ="header-list" href="' + url_works + '">works</a>';
+        html += '<a class ="header-list" href="news/index.html">news</a>';
+        html += '<a class ="header-list" href="cv/index.html">cv</a>';
+        html += '<a class ="header-list" href="contact/index.html">contact?</a>';
     } else {
-        html += '<a class="header-title" href="../index.html">Yuto Hayashi</a>';
-        html += '<div class="header-list">';
+        html += '<a class="header-title" href="../index.html">Yuto&nbsp;Hayashi</a>';
+        html += '<div class="header-list-container">';
         if (type == 'works') {
-
+            html += '<div class ="header-list">WORKS</div>';
+        } else {
+            html += '<a class ="header-list" href="../' + url_works + '">works</a>';
         }
-
-        var works = type == 'works' ? 'WORKS' : 'works';
-        var news = type == 'news' ? 'NEWS' : 'news';
-        var cv = type == 'cv' ? 'CV' : 'cv';
-        var contact = type == 'contact' ? 'CONTACT?' : 'contact?';
-        html += '<a href="../works/y2020_caniseeyounow.html">' + works + '</a>';
-        html += '<a href="../news/index.html">' + news + '</a>';
-        html += '<a href="../cv/index.html">' + cv + '</a>';
-        html += '<a href="../contact/index.html">' + contact + '</a>';
+        if (type == 'news') {
+            html += '<div class ="header-list">NEWS</div>';
+        } else {
+            html += '<a class ="header-list" href="../news/index.html">news</a>';
+        }
+        if (type == 'cv') {
+            html += '<div class ="header-list">CV</div>';
+        } else {
+            html += '<a class ="header-list" href="../cv/index.html">cv</a>';
+        }
+        if (type == 'contact') {
+            html += '<div class ="header-list">CONTACT?</div>';
+        } else {
+            html += '<a class ="header-list" href="../contact/index.html">contact?</a>';
+        }
     }
     html += '</div>';
     html += '</div>';

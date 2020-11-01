@@ -31,21 +31,24 @@
 </head>
 
 <body class="fadeinout">
-  <div id="container">
-    <script type="text/javascript">header('works');</script>
-    <div class="works-contents">
-      <div class="thumbnail">
-        <script type="text/javascript">
-          workthumbnail();
-        </script>
-      </div>
-      <div class="article">
-        <div class="article-container">
-          <div class="slideshow">
-            <img src="../img/y2020_caniseeyounow/img1.jpg" alt="">
-            <img src="../img/y2020_caniseeyounow/img2.jpg" alt="">
-          </div>
-          <!--
+  <script type="text/javascript">header('works');</script>
+  <div class="works-contents">
+    <div class="thumbnail">
+      <script type="text/javascript">
+        workthumbnail('y2020_caniseeyounow.html');
+      </script>
+    </div>
+    <div class="article">
+      <div class="article-container">
+        <div class="slideshow">
+          <img src="../img/y2020_caniseeyounow/img1.jpg" alt="">
+          <img src="../img/y2020_caniseeyounow/img2.jpg" alt="">
+        </div>
+        <div class="caption">
+          <div class="caption-title">Can I see You now?</div>
+          <div></div>
+        </div>
+        <!--
           <div class="video-content">
             <p class="trailer">Trailer</p>
             <div class="video">
@@ -62,11 +65,10 @@
             </div>
             <div class="video-bottom-margin">&nbsp;</div>
           </div>-->
-        </div>
       </div>
     </div>
-    <script type="text/javascript">copyright();</script>
   </div>
+  <script type="text/javascript">copyright();</script>
 
   <!-- スライドショーのjs -->
   <script type="text/javascript" src="../js/slick.min.js"></script>

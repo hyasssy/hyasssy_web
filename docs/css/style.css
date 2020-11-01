@@ -15,7 +15,7 @@
 html, body{
   overflow: hidden;
 }
-.header{
+.header{/* これで強引にマスクする */
   background: rgb(252,253,252) !important;
   padding-bottom: 3rem !important;
 }
