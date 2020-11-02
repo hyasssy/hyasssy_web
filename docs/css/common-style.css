@@ -10,11 +10,12 @@
   font-family: "AppliMincho";
   src: url(../fonts/AppliMincho.otf);
 }
-:root{
+:root {
   --linkblue: rgb(77, 123, 223);
   --hoverblue: rgb(108, 169, 223);
 }
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -25,47 +26,49 @@ body, html {
   font-family: sofia-pro, a-otf-gothic-bbb-pr6n, sans-serif;
   font-weight: 300;
 }
+html {
+  visibility: hidden;
+}
+html.wf-active,
+html.loading-delay {
+  visibility: visible;
+}
 
 body::after {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(252, 253, 252);  /* 背景カラー */
-  z-index: 9999;  /* 一番手前に */
-  pointer-events: none;  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
-  opacity: 0;  /* 初期値では非表示 */
-  -webkit-transition: opacity .4s ease;  /* アニメーション時間は 0.8秒 */
-  -ms-transition: opacity .4s ease;
-  -moz-transition: opacity .4s ease;
-  transition: opacity .4s ease;
+  background-color: rgb(252, 253, 252); /* 背景カラー */
+  z-index: 9999; /* 一番手前に */
+  pointer-events: none; /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0; /* 初期値では非表示 */
+  -webkit-transition: opacity 0.4s ease; /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 
-
-/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
-
-body.fadeinout::after {
-  opacity: 1;
-}
-
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
   transition: 0.3s;
   color: var(--linkblue);
 }
-a:link, a:visited{
+a:link,
+a:visited {
   color: var(--linkblue);
 }
-a:hover, a:active{
+a:hover,
+a:active {
   color: var(--hoverblue);
 }
 
-.header{
-  position:fixed;
-  top:0;
-  margin-left:2px;
+.header {
+  position: fixed;
+  top: 0;
+  margin-left: 2px;
   margin-bottom: 1px;
   font-size: 2.2rem;
   line-height: 2.3rem;
@@ -73,28 +76,30 @@ a:hover, a:active{
   letter-spacing: 0.5px;
   font-family: futura-pt;
   width: 100%;
-  display:flex;
-  align-items: flex-end;/*下揃え*/
+  display: flex;
+  align-items: flex-end; /*下揃え*/
   background: linear-gradient(
     180deg,
-    rgba(252,253,252,1) 0%,
-    rgba(252,253,252,0.3) 100%
+    rgba(252, 253, 252, 1) 0%,
+    rgba(252, 253, 252, 0.3) 100%
   );
-  z-index:1000;
+  z-index: 1000;
   color: var(--linkblue);
 }
 
-.header a:link, .header a:visited{
+.header a:link,
+.header a:visited {
   color: var(--linkblue);
 }
-.header a:hover, .header a:active{
+.header a:hover,
+.header a:active {
   color: var(--hoverblue);
 }
 
-.header-list-container{
+.header-list-container {
   display: flex;
 }
-.header-list{
+.header-list {
   bottom: 0;
   font-size: 1.9rem;
   margin-left: 1.3rem;
@@ -112,24 +117,27 @@ a:hover, a:active{
   font-family: jaf-bernina-sans, sans-serif;
   letter-spacing: 1px;
   font-weight: 300;
-  color: rgb(140,140,140);
+  color: rgb(140, 140, 140);
 }
-.copyright a{
-  color: rgb(140,140,140);
+.copyright a {
+  color: rgb(140, 140, 140);
 }
-.copyright a:link, .copyright a:visited{
-  color: rgb(140,140,140);
+.copyright a:link,
+.copyright a:visited {
+  color: rgb(140, 140, 140);
 }
-.copyright a:hover, .copyright a:active{
+.copyright a:hover,
+.copyright a:active {
   color: var(--hoverblue);
 }
-@media screen and (min-width:480px){/*タブレットサイズ以上*/
-  .header{
+@media screen and (min-width: 480px) {
+  /*タブレットサイズ以上*/
+  .header {
     font-size: 2.5rem;
     line-height: 2.6rem;
     letter-spacing: 1px;
   }
-  .header-list{
+  .header-list {
     font-size: 2rem;
     margin-left: 1.5rem;
   }
@@ -137,12 +145,13 @@ a:hover, a:active{
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width:896px){/*pcサイズ以上*/
-  .header{
+@media screen and (min-width: 896px) {
+  /*pcサイズ以上*/
+  .header {
     font-size: 3rem;
     line-height: 3.1rem;
   }
-  .header-list{
+  .header-list {
     font-size: 2.4rem;
   }
 }

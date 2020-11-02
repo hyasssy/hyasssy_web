@@ -27,9 +27,15 @@
   <!-- スライダー -->
   <link rel="stylesheet" type="text/css" href="../css/plugin/slick.css">
   <link rel="stylesheet" type="text/css" href="../css/plugin/slick-theme.css">
+  <!-- FOUTを防ぐため-->
+  <script type="text/javascript">
+    setTimeout(function () {
+      document.getElementsByTagName("html")[0].classList.add("loading-delay");
+    }, 3000);
+  </script>
 </head>
 
-<body class="fadeinout">
+<body>
   <script type="text/javascript">header('works');</script>
   <div class="works-contents">
     <div class="thumbnail">
