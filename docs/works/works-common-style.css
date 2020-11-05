@@ -4,17 +4,17 @@
   src: url(../fonts/AppliMincho.otf);
 }
 
-.works-contents{
-  display:flex;
+.works-contents {
+  display: flex;
   justify-content: space-between;
   margin-top: 5.5rem;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
-.thumbnail{
+.thumbnail {
   width: 20%;
 }
-.square-frame{
+.square-frame {
   position: relative;
   width: 100%;
   padding-bottom: 2.5rem;
@@ -23,161 +23,157 @@
   font-size: 1rem;
   letter-spacing: 1px;
 }
-.square-content{
+.square-content {
   display: block;
   width: 100%;
   padding-top: 100%;
   background-size: cover;
   background-position: 50%;
 }
-.thumbnail-media{
+.thumbnail-media {
   position: absolute;
   white-space: nowrap;
   text-align: left;
   transform-origin: left;
 
   transform: rotate(90deg);
-  left:calc(100% + 0.6rem);
+  left: calc(100% + 0.6rem);
   top: -0.6rem;
   opacity: 0;
   transition: 0.3s;
 }
-.thumbnail-caption{
-  float: right;/*右揃え、高さをなくす*/
-  text-align: right;/*右揃え*/
+.thumbnail-caption {
+  float: right; /*右揃え、高さをなくす*/
+  text-align: right; /*右揃え*/
   width: 100%;
-  opacity:0;
+  opacity: 0;
   transition: 0.3s;
 }
-.square-frame:hover, .square-frame:active{
+.square-frame:hover,
+.square-frame:active {
   opacity: 1;
 }
-.square-frame:hover .thumbnail-caption, .square-frame:active .thumbnail-caption{
+.square-frame:hover .thumbnail-caption,
+.square-frame:active .thumbnail-caption {
   opacity: 1;
 }
-.square-frame:hover .thumbnail-media, .square-frame:active .thumbnail-media{
+.square-frame:hover .thumbnail-media,
+.square-frame:active .thumbnail-media {
   opacity: 1;
 }
-.thumbnail-border{
+.thumbnail-border {
   border-top: 1px solid rgb(177, 188, 190);
   /*margin-bottom: 1rem;*/
   margin-top: -1.7rem;
   margin-bottom: 1.7rem;
   height: 0;
 }
-.thumbnail-space{
+.thumbnail-space {
   height: 6rem;
 }
 
-.article{
+.article {
   width: 80%;
   /*background-color: yellow;*/
 }
-.article-container{
-  margin-left: 1.5rem;/*0.6rem; 2カラム完成したらここ戻す。*/
+.article-container {
+  margin-left: 1.5rem; /*0.6rem; 2カラム完成したらここ戻す。*/
 }
 
-
-.slideshow{
+.slideshow {
   max-width: 100%;
   margin: 0 auto 50px;
   padding: 0;
   height: auto;
 }
-.slideshow img{
+.slideshow img {
   width: 100%;
 }
 
-.caption-container{
+.caption-container {
   overflow: hidden;
 }
-.caption{
+.caption {
   float: right;
   margin-top: 0.5rem;
   font-family: futura-pt, source-han-sans-japanese, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
 }
-.caption-title{
+.caption-title {
   font-family: futura-pt, a-otf-gothic-bbb-pr6n, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
 }
-.caption-space{
+.caption-space {
   height: 1rem;
 }
-.article-space{
+.article-space {
   height: 10rem;
 }
-.article-text{
+.article-text {
   font-family: sofia-pro, a-otf-gothic-bbb-pr6n, sans-serif;
   font-weight: 300;
-  letter-spacing: 0.5px;
-  line-height: 2.1rem;
-  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
   margin-bottom: 3rem;
 }
 
-@media screen and (min-width:480px){/*タブレットサイズ以降*/
-  .square-frame{
+@media screen and (min-width: 480px) {
+  /*タブレットサイズ以降*/
+  .square-frame {
     width: calc(100% - 2rem);
     padding-left: 2rem;
     padding-bottom: 3rem;
   }
-  .thumbnail-border{
+  .thumbnail-border {
     width: calc(100% - 2rem);
     padding-left: 2rem;
     /*margin-bottom: 2rem;*/
     font-size: 1.2rem;
   }
-  .article{
+  .article {
     width: calc(100% - 14rem);
   }
-  .caption{
-    font-size: 1.5rem;
-  }
-  .article-container{
+  .article-container {
     margin-left: 7%;
   }
-  .article-text{
+  .article-text {
     max-width: 40rem;
   }
 }
-@media screen and (min-width:896px){/*pcサイズ以降*/
-  .works-contents{
+@media screen and (min-width: 896px) {
+  /*pcサイズ以降*/
+  .works-contents {
     margin-left: 0;
     margin-right: 0;
   }
-  .thumbnail{
+  .thumbnail {
     width: 140px;
   }
 
-.thumbnail-space{
-  height: 10rem;
-}
-  .square-frame{
+  .thumbnail-space {
+    height: 10rem;
+  }
+  .square-frame {
     width: calc(100% - 3.7rem);
     padding-left: 3.7rem;
     padding-bottom: 3.5rem;
   }
-  .thumbnail-border{
+  .thumbnail-border {
     width: calc(100% - 3.7rem);
     padding-left: 3.7rem;
     /*margin-bottom: 2.5rem;*/
   }
-  .article-container{
+  .article-container {
     margin-left: 10%;
     margin-right: 10%;
   }
-  .article-text{
+  .article-text {
     margin-left: 10%;
     width: 80%;
   }
 }
-
-
-
-
 
 .video-content {
   font-family: "sofia-pro";
@@ -221,7 +217,6 @@
 .video-bottom-margin {
   height: 30rem;
 }
-
 
 /*
 .title {
