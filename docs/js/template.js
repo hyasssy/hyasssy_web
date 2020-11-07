@@ -16,8 +16,8 @@ function header(type) {
     html += '<a href="' + path + 'texts/index.html" class="nav-title">Texts</a>';
     html += '<a href="' + path + 'cv/index.html" class="nav-title">CV</a>';
     html += '<a href="' + path + 'contact/index.html" class="nav-title">Contact?</a>';
-    html += '<div class="nav-snsicon"><a icon" href="https://instagram.com/hyasssy" target="_blank" ><img src="' + path + 'img/icon/icon_insta.png" alt="icon"></a>';
-    html += '<a icon" href="https://twitter.com/hyasssy" target="_blank" ><img src="' + path + 'img/icon/icon_twitter.png" alt="icon"></a></div>';
+    html += '<div class="nav-snsicon"><a icon" href="https://instagram.com/hyasssy" target="_blank" ><img src="' + path + 'img/icon/icon_1.png" alt="icon"></a>';
+    html += '<a icon" href="https://twitter.com/hyasssy" target="_blank" ><img src="' + path + 'img/icon/icon_2.png" alt="icon"></a></div>';
     html += '</div>';//nav-wrapper
     html += '</div>';//nav-contents
     html += '</div>';//nav-container
