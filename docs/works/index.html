@@ -15,11 +15,13 @@
       padding-top: 15rem;
       overflow: hidden;
       width: 66%;
+      max-width: 768px;
     }
 
     .square-frame {
       display: inline-block;
       width: calc(50% - 1.5rem);
+      max-width: 256px;
       vertical-align: top;
       margin-right: 1.5rem;
     }
@@ -50,7 +52,7 @@
 
     @media screen and (min-width: 896px) {
 
-      /*タブレットサイズ以降*/
+      /*PC以降*/
       .square-frame {
         width: calc(33% - 5.2rem);
       }
