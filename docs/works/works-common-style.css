@@ -10,6 +10,10 @@
   justify-content: space-between;
   width: 100%;
 }
+#pagetop{
+  float: left;
+  margin-top: -8rem;
+}
 .thumbnail {
   width: 20%;
   font-size: 1rem;
@@ -75,7 +79,7 @@
 
 .article-container {
   width: 100%;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-bottom: 30%;
 }
 
@@ -159,6 +163,9 @@
     width: 16%;
     min-width: 9rem;
   }
+  #pagetop{
+    margin-top: -10rem;
+  }
   .square-frame {
     width: calc(100% - 0.6rem);
     padding-left: 0.6rem;
@@ -187,7 +194,9 @@
   .thumbnail {
     width: 140px;
   }
-
+  #pagetop{
+    margin-top: -14rem;
+  }
   .thumbnail-space {
     height: 10rem;
   }

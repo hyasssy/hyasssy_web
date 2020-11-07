@@ -4,6 +4,9 @@ function thumbnail(number, link, imgsrc, captext, isonpage, mediatype) {
         style = 'style="opacity:1"';//当該ページの場合は半透明じゃなくす。
     }
     var html = "";
+    if (isonpage) {
+        html += '<div id="pagetop"></div>'
+    }
     switch (number) {//いずれshowリストも追加する。
         case 16:
             html += '<div class="thumbnail-border"><div>▼Portfolio</div></div>';
@@ -24,7 +27,7 @@ function thumbnail(number, link, imgsrc, captext, isonpage, mediatype) {
     }
     html += '<div class="square-frame" ' + style + '>';
     html += '<div class="thumbnail-media" ' + style + '>' + mediatype + '</div>'
-    html += isonpage ? '<span>' : '<a href="' + link + '">';//同じページにリンクしないようにする処置
+    html += isonpage ? '<span>' : '<a href="' + link + '#pagetop">';//同じページにリンクしないようにする処置
     html += '<div class="square-content" style="background-image: url(' + imgsrc + ');"></div>';
     html += isonpage ? '</span>' : '</a >';
     html += '<div class="thumbnail-caption" ' + style + '>' + captext + '</div>';
