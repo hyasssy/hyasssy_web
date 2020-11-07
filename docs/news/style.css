@@ -1,4 +1,51 @@
 /*css of news page*/
 .news-contents{
-    margin-top: 5rem;
+  padding-top: 10rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.news-list{
+  margin-bottom: 3rem;
+}
+.acd-check{
+  display: none;
+}
+.acd-label{
+  display: block;
+  color: var(--titleblack);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+}
+.acd-label:hover, .acd-label:active{
+  color: var(--baseblack);
+}
+.acd-content{
+  height: 0;
+  opacity: 0;
+  transition: .5s;
+  visibility: hidden;
+}
+.acd-check:checked ~ .acd-content{
+  margin-top: 0.2rem;
+  height: 40px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*.news-list a:link,
+.news-list a:visited {
+  color: var(--titleblack);
+}
+.news-list a:hover,
+.news-list a:active {
+  color: var(--titlehoverblue);
+}*/
+@media screen and (min-width:480px){/*タブレットサイズ以降*/
+  .news-contents{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media screen and (min-width:896px){/*PCサイズ以降*/
 }

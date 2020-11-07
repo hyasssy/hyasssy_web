@@ -3,17 +3,71 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Yuto Hayashi/林 裕人</title>
+  <title>Yuto Hayashi / 林 裕人</title>
   <link rel="icon" type="image/x-icon" href="img/vrhayashi.png">
   <meta name="author" author="Yuto Hayashi">
   <meta name="description" content="Yuto Hayashi/林 裕人-web">
   <meta name="keywords" content="Yuto Hayashi,林裕人,メディアアート,東京芸大,VR,現代美術,contemporary art,アート,デジタルアート,メディア映像">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/common-style.css">
   <script type="text/javascript" src="js/template.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+
+  <style>
+    html,
+    body {
+      overflow: hidden;
+    }
+
+    .header {
+      /* これで強引にマスクする */
+      background: rgb(252, 253, 252) !important;
+    }
+
+    .slideshow {
+      position: relative;
+      height: calc(100% - 11.6rem);
+      margin-top: 5.6rem;
+      margin-left: 0.6rem;
+      margin-right: 0.6rem;
+      color: black;
+    }
+
+    .slideshow img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 8;
+      opacity: 0.0;
+    }
+
+    .slideshow img.active {
+      z-index: 10;
+      opacity: 1.0;
+    }
+
+    .slideshow img.last-active {
+      z-index: 9;
+    }
+
+    @media screen and (min-width:480px) {
+
+      /*タブレットサイズ以降*/
+      .slideshow {
+        height: calc(100% - 6.2rem);
+      }
+    }
+
+    @media screen and (min-width: 896px) {
+      /*pcサイズ以降*/
+    }
+  </style>
+
+
   <script type="text/javascript">
     function slideSwitch() {
       var $active = $('.slideshow img.active');
@@ -55,7 +109,7 @@
 
 <body>
   <script type="text/javascript">header('top');</script>
-  <a href="works/y2020_caniseeyounow.html">
+  <a href="works/index.html">
     <!--後々は表示されてるもののリンクに飛ぶようにしたい。-->
     <div class="slideshow">
       <img src="img/y2020_caniseeyounow/img1.jpg" alt="のっぺりした街" class="active">
@@ -67,9 +121,6 @@
       <img src="img/y2019_followingthesun/img9.jpg" alt="バスの窓">
     </div>
   </a>
-  <script type="text/javascript">copyright();</script>
-  <!-- フェードインアウト -->
-  <script src="js/fadeinout.js"></script>
 </body>
 
 </html>

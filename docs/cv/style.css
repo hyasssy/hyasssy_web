@@ -1,0 +1,50 @@
+/*css of CV page*/
+.cv-contents{
+  padding-top: 6rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+.photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+.photo img{
+  width: 10rem;
+}
+.name{
+  margin-bottom: 8rem;
+}
+.text-container{
+  display: flex;
+}
+.year-list{
+  margin-right: 2.5rem;
+}
+.subtitle{
+  margin-bottom: 0.1rem;
+}
+.langborder{
+  margin: 8rem 0;
+  border-bottom: 1px solid rgb(177, 188, 190);
+}
+@media screen and (min-width:480px){/*タブレットサイズ以降*/
+  .cv-contents{
+    padding-top: 8rem;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media screen and (min-width:896px){/*PCサイズ以降*/
+  .cv-contents{
+    padding-top: 10rem;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
