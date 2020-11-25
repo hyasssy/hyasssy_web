@@ -26,6 +26,14 @@
   <!-- スライダー -->
   <link rel="stylesheet" type="text/css" href="../css/plugin/slick.css">
   <link rel="stylesheet" type="text/css" href="../css/plugin/slick-theme.css">
+  <!--言語切り替え-->
+  <script type="text/javascript">
+    window.onload = function () {
+      // --- ブラウザのデフォルト言語を取得して初回の表示 ----- 
+      var wDef = (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0, 2);
+      langSet(wDef);
+    }
+  </script>
   <!-- FOUTを防ぐため-->
   <script type="text/javascript">
     setTimeout(function () {
@@ -43,6 +51,7 @@
       </script>
     </div>
     <div class="article-container">
+      <script type="text/javascript">langswitchbutton();</script>
       <div class="slideshow">
         <img src="../img/y2020_caniseeyounow/img5.jpg" alt="">
         <img src="../img/y2020_caniseeyounow/img1.jpg" alt="">
@@ -82,7 +91,8 @@
       </div>
       <div class="article-text">-</div>
       <div class="article-text">
-        English text is on making...
+        In 2020, people were strongly separated by physical distance. How can we meet people now?
+        As an attempt this time, I designed a session. <br>*This work is a PC application that can be played online.
       </div><!-- 更新2020/11/1 -->
     </div>
     <div class="bottom-container">

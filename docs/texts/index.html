@@ -22,7 +22,15 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-  <!-- FOUTを防ぐため-->
+  <!--言語切り替え-->
+  <script type="text/javascript">
+    window.onload = function () {
+      // --- ブラウザのデフォルト言語を取得して初回の表示 ----- 
+      var wDef = (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0, 2);
+      langSet(wDef);
+    }
+  </script>
+  <!--FOUTを防ぐため-->
   <script type="text/javascript">
     setTimeout(function () {
       document.getElementsByTagName("html")[0].classList.add("loading-delay");
@@ -33,6 +41,11 @@
 <body>
   <script type="text/javascript">header('texts');</script>
   <div class="texts-contents">
+    <script type="text/javascript">langswitchbutton();</script>
+    <div class="lng-swt-btn">
+      <div class="ja-btn"></div>
+      <div class="en-btn"></div>
+    </div>
     <div class="texts-list"><a href="texts/test.txt" target="_blank">→準備中です。</a></div>
     <div class="texts-list"><a href="">→準備中です。</a></div>
   </div>
