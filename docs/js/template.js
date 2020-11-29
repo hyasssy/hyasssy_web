@@ -11,9 +11,11 @@ function header(type) {
     html += '<label class="nav-unshown" id="nav-close" for="nav-input"></label>';
     html += '<div id="nav-contents">';
     html += '<div id="nav-wrapper">';
-    html += '<a href="' + path + 'news/index.html" class="nav-title">News</a>';
+    //News削除
+    //html += '<a href="' + path + 'news/index.html" class="nav-title">News</a>';
     html += '<a href="' + path + 'works/index.html" class="nav-title">Works</a>';
-    html += '<a href="' + path + 'texts/index.html" class="nav-title">Texts</a>';
+    //Textsはとりあえずコンテンツが充足するまで消しておく
+    //html += '<a href="' + path + 'texts/index.html" class="nav-title">Texts</a>';
     html += '<a href="' + path + 'cv/index.html" class="nav-title">CV</a>';
     html += '<a href="' + path + 'contact/index.html" class="nav-title">Contact?</a>';
     html += '<div class="nav-snsicon"><a icon" href="https://instagram.com/hyasssy" target="_blank" ><img src="' + path + 'img/icon/icon_1.png" alt="icon"></a>';
@@ -25,9 +27,11 @@ function header(type) {
     if (type == 'top') {
         html += '<div>Yuto&nbsp;Hayashi</div>';
         html += '<div class="header-list-container">';
-        html += '<a class ="header-list" href="news/index.html">news</a>';
+        //News削除
+        //html += '<a class ="header-list" href="news/index.html">news</a>';
         html += '<a class ="header-list" href="works/index.html">works</a>';
-        html += '<a class ="header-list" href="texts/index.html">texts</a>';
+        //Textsはとりあえずコンテンツが充足するまで消しておく
+        //html += '<a class ="header-list" href="texts/index.html">texts</a>';
         html += '<a class ="header-list" href="cv/index.html">cv</a>';
         html += '<a class ="header-list" href="contact/index.html">contact?</a>';
         html += '</div>';//header-list-container
@@ -47,11 +51,12 @@ function header(type) {
         else {
             html += '<a class ="header-list" href="../works/index.html">works</a>';
         }
-        if (type == 'texts') {
+        //Textsはとりあえずコンテンツが充足するまで消しておく
+        /*if (type == 'texts') {
             html += '<div class ="header-list">TEXTS</div>';
         } else {
             html += '<a class ="header-list" href="../texts/index.html">texts</a>';
-        }
+        }*/
         if (type == 'cv') {
             html += '<div class ="header-list">CV</div>';
         } else {
