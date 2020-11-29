@@ -28,7 +28,7 @@
 }
 .acd-check:checked ~ .acd-content{
   margin-top: 0.2rem;
-  height: 40px;
+  height: auto;
   opacity: 1;
   visibility: visible;
 }

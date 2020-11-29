@@ -40,7 +40,7 @@ html {
   height: 100%;
   font-size: 10px;
   color: var(--baseblack);
-  background-color: rgb(252, 253, 252);
+  /*background-color: rgb(252, 253, 252);*/
   font-family: "GillSans", a-otf-gothic-bbb-pr6n, sans-serif;/*ニュートラル*/
 }
 html {
@@ -71,7 +71,7 @@ a:active {
   top: 0;
   margin-left: 2px;
   padding-top: 0.1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   font-size: 2.5rem;
   line-height: 2.6rem;
   font-weight: 400;
@@ -83,6 +83,7 @@ a:active {
   background: linear-gradient(
     180deg,
     rgba(252, 253, 252, 1) 0%,
+    rgba(252, 253, 252, 1) 30%,
     rgba(252, 253, 252, 0) 100%
   );
   z-index: 100;
@@ -129,7 +130,7 @@ a:active {
   transition: 0.3s;
 }
 #nav-open img{
-  width: 5rem;
+  width: 4rem;
   margin-top: 0.3rem;
   margin-right: 0.6rem;
   /*width: 4.6rem;
@@ -161,7 +162,7 @@ a:active {
   top: 0;
   left: 0;
   z-index: 102;/*最前面に*/
-  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  width:80%;/*右側に隙間を作る（閉じるカバーを表示）*/
   max-width: 330px;/*最大幅（調整してください）*/
   height: 100%;
   background: rgba(252, 253, 252, 0.85);/*背景色*/
@@ -214,16 +215,9 @@ a:active {
 #nav-input:checked ~ #nav-contents {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);/*中身を表示（右へスライド）*/
-  box-shadow: 6px 6px 25px rgba(0,0,14,.15);
+  box-shadow: 10px 0px 80px rgba(0,0,14,.6);
   opacity: 1;
 }
-
-
-
-
-
-
-
 
 
 

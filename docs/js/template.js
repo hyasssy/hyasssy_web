@@ -11,12 +11,11 @@ function header(type) {
     html += '<label class="nav-unshown" id="nav-close" for="nav-input"></label>';
     html += '<div id="nav-contents">';
     html += '<div id="nav-wrapper">';
-    //News削除
-    //html += '<a href="' + path + 'news/index.html" class="nav-title">News</a>';
+    html += '<a href="' + path + 'index.html" class="nav-title">Top</a>';
+    html += '<a href="' + path + 'news/index.html" class="nav-title">News</a>';
     html += '<a href="' + path + 'works/index.html" class="nav-title">Works</a>';
     //Textsはとりあえずコンテンツが充足するまで消しておく
     //html += '<a href="' + path + 'texts/index.html" class="nav-title">Texts</a>';
-    html += '<a href="' + path + 'cv/index.html" class="nav-title">CV</a>';
     html += '<a href="' + path + 'contact/index.html" class="nav-title">Contact?</a>';
     html += '<div class="nav-snsicon"><a icon" href="https://instagram.com/hyasssy" target="_blank" ><img src="' + path + 'img/icon/icon_1.png" alt="icon"></a>';
     html += '<a icon" href="https://twitter.com/hyasssy" target="_blank" ><img src="' + path + 'img/icon/icon_2.png" alt="icon"></a></div>';
@@ -27,12 +26,10 @@ function header(type) {
     if (type == 'top') {
         html += '<div>Yuto&nbsp;Hayashi</div>';
         html += '<div class="header-list-container">';
-        //News削除
-        //html += '<a class ="header-list" href="news/index.html">news</a>';
+        html += '<a class ="header-list" href="news/index.html">news</a>';
         html += '<a class ="header-list" href="works/index.html">works</a>';
         //Textsはとりあえずコンテンツが充足するまで消しておく
         //html += '<a class ="header-list" href="texts/index.html">texts</a>';
-        html += '<a class ="header-list" href="cv/index.html">cv</a>';
         html += '<a class ="header-list" href="contact/index.html">contact?</a>';
         html += '</div>';//header-list-container
     } else {
@@ -57,11 +54,6 @@ function header(type) {
         } else {
             html += '<a class ="header-list" href="../texts/index.html">texts</a>';
         }*/
-        if (type == 'cv') {
-            html += '<div class ="header-list">CV</div>';
-        } else {
-            html += '<a class ="header-list" href="../cv/index.html">cv</a>';
-        }
         if (type == 'contact') {
             html += '<div class ="header-list">CONTACT?</div>';
         } else {
@@ -83,7 +75,7 @@ function copyright() {
     document.write(html);
 }
 
-function langswitchbutton(){
+function langswitchbutton() {
     var html = "";
     html += '';
     document.write(html);
@@ -94,12 +86,12 @@ function langSet(argLang) {
     // --- 切り替え対象のclass一覧を取得 ----------------------
     var elm = document.getElementsByClassName("langCng");
     for (var i = 0; i < elm.length; i++) {
-    // --- 選択された言語と一致は表示、その他は非表示 -------
-    if (elm[i].getAttribute("lang") == argLang) {
-      elm[i].style.display = '';
+        // --- 選択された言語と一致は表示、その他は非表示 -------
+        if (elm[i].getAttribute("lang") == argLang) {
+            elm[i].style.display = '';
+        }
+        else {
+            elm[i].style.display = 'none';
+        }
     }
-    else {
-        elm[i].style.display = 'none';
-    }
-  }
 }
