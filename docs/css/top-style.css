@@ -5,9 +5,10 @@
   height: 100vh;
 }
 .bg-slider {
-  margin: 4.6rem 0 0 0.6rem;
+  margin: 4.6rem 0.6rem 0 0.6rem;
   width: calc(100vw - 1.2rem);
   height: calc(100vh - 5.2rem);
+  height: -webkit-fill-available - 0.6rem; /*iosのsafariでメニューバーに隠れてしまう問題解決*/
   background-position: center center;
   background-size: cover;
   display: flex;
@@ -63,6 +64,7 @@
 }
 
 @keyframes float-arrow {
+  /*矢印アニメーション*/
   0% {
     transform: translate(0, 0px);
   }
