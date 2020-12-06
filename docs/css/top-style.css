@@ -6,9 +6,9 @@
 }
 .bg-slider {
   margin: 4.6rem 0 0 0.6rem;
-  width: calc(100vw - 1.2rem);
+  width: calc(100% - 1.2rem);
   height: calc(100% - 5.2rem);
-  height: -webkit-fill-available - 0.6rem; /*iosのsafariでメニューバーに隠れてしまう問題解決*/
+  /*height: -webkit-fill-available - 0.6rem; /*iosのsafariでメニューバーに隠れてしまう問題解決*/
   background-position: center center;
   background-size: cover;
   display: flex;
@@ -27,6 +27,7 @@
   height: 100%;
   color: rgb(252, 253, 252);
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   font-size: 30px;
   word-wrap: break-word;
   z-index: 999;
