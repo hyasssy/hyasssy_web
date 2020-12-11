@@ -77,7 +77,22 @@ function copyright() {
 
 function langswitchbutton() {
     var html = "";
-    html += '';
+    html += '<div id="lang-selector">'
+    html += '<input type="radio" name="langKbn" id="sJa" onClick="langSet(' + "'ja')" + '" checked>';
+    html += '<label for="sJa" class="langsetbtn">';
+    html += '<span class="langCng" lang="ja">日本語</span>';
+    html += '<span class="langCng" lang="en">日本語</span>';
+    html += '</label>';
+    html += '<span class="langsetbtn">/</span>'
+    html += '<input type="radio" name="langKbn" id="sEn" onClick="langSet(' + "'en')" + '">';
+    html += '<label for="sEn" class="langsetbtn">';
+    html += '<span class="langCng" lang="ja">English</span>';
+    html += '<span class="langCng" lang="en">English</span>';
+    html += '</label>';
+    /*html += '<div class="langCng" lang="ja">テスト</div>';使い方
+    html += '<div class="langCng" lang="en">test</div>';*/
+    html += '</div>'
+
     document.write(html);
 }
 
