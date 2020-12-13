@@ -75,7 +75,7 @@ function thumbnaillist(number, pagenumber) {
     }
 }
 function workthumbnailtop(pagenumber) {
-    for (var i = 16; i > 0; i--) {
+    for (var i = 16; i >= 0; i--) {
         thumbnaillist(i, pagenumber);
         if (pagenumber == i) return;
     }
