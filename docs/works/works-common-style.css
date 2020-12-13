@@ -5,14 +5,18 @@
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
-.bottom-container{
+.bottom-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-#pagetop{
+#pagetop-container {
   float: left;
-  margin-top: -8rem;
+  position: absolute;
+}
+#pagetop {
+  position: relative;
+  top: -5rem;
 }
 .thumbnail {
   width: 20%;
@@ -31,7 +35,7 @@
   padding-top: 100%;
   background-size: cover;
   background-position: 50%;
-  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
 .thumbnail-media {
@@ -83,6 +87,18 @@
   padding-bottom: 30%;
 }
 
+.photoworks {
+  max-width: 100%;
+  margin: 0 auto 50px;
+  padding: 0;
+  height: auto;
+}
+.photoworks img {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
 .slideshow {
   max-width: 100%;
   margin: 0 auto 50px;
@@ -94,7 +110,7 @@
 }
 
 .caption-container {
-  overflow: hidden;/*floatに高さを設定する用*/
+  overflow: hidden; /*floatに高さを設定する用*/
 }
 .caption {
   float: right;
@@ -138,34 +154,33 @@
   width: 100%;
   height: 100%;
 }
-.video-caption-container{
+.video-caption-container {
   margin-top: -1rem;
   padding-bottom: 5%;
 }
-.bottom-img{
+.bottom-img {
   width: 70%;
   font-family: futura-pt, sans-serif;
   font-weight: 200;
   font-size: 1rem;
 }
-.bottom-img img{
+.bottom-img img {
   width: 100%;
   padding-top: 20%;
 }
 
-
-@media screen and (min-width: 480px) {/*タブレットサイズ以降*/
+@media screen and (min-width: 480px) {
+  /*タブレットサイズ以降*/
   .works-contents {
     margin-left: 0;
     margin-right: 0;
   }
-  .thumbnail{
+  .thumbnail {
     width: 16%;
     min-width: 9rem;
   }
-  #pagetop{
-    margin-top: -10rem;
-  }
+  /*#pagetop {
+  }*/
   .square-frame {
     width: calc(100% - 0.6rem);
     padding-left: 0.6rem;
@@ -180,22 +195,22 @@
   .article-container {
     width: 84%;
     margin-left: 8%;
-
   }
   .article-text {
     max-width: 40rem;
   }
-  .bottom-img{
+  .bottom-img {
     width: 62%;
     margin-right: 8%;
   }
 }
-@media screen and (min-width: 896px) {/*pcサイズ以降*/
+@media screen and (min-width: 896px) {
+  /*pcサイズ以降*/
   .thumbnail {
     width: 140px;
   }
-  #pagetop{
-    margin-top: -14rem;
+  #pagetop {
+    top: 5rem;
   }
   .thumbnail-space {
     height: 10rem;
@@ -217,13 +232,13 @@
     margin-left: 10%;
     width: 80%;
   }
-  .caption{
+  .caption {
     font-size: 1.5rem;
   }
-  .caption-title{
+  .caption-title {
     font-size: 2.5rem;
   }
-  .video-caption{
+  .video-caption {
     font-size: 1.5rem;
   }
 }
