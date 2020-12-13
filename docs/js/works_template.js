@@ -47,7 +47,7 @@ function thumbnaillist(number, pagenumber) {
             break;
         case 12: thumbnail(number, 'y2020_followingthesun_photo.html', '../img/thumbnail/t_followingthesun_photo.jpg', 'Following the Sun', pagenumber == number, 'photo');
             break;
-        case 11: thumbnail(number, 'y2020_thumbnail.html', '../img/thumbnail/t_koko.jpg', 'ここ', pagenumber == number, 'video');
+        case 11: thumbnail(number, 'y2020_koko.html', '../img/thumbnail/t_koko.jpg', 'ここ', pagenumber == number, 'video');
             break;
         case 10: thumbnail(number, 'y2020_isyourbodyyours.html', '../img/thumbnail/t_isyourbodyyours.jpg', 'Is your body yours?', pagenumber == number, 'VR installation');
             break;

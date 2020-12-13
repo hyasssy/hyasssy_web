@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Works | Yuto Hayashi</title>
+    <link rel="icon" type="image/x-icon" href="../img/vrhayashi.png">
+    <meta name="author" author="Yuto Hayashi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/plugin/normalize.css">
+    <link rel="stylesheet" href="../css/common-style.css">
+    <link rel="stylesheet" href="works-common-style.css">
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/works_template.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'uda2lvx',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!-- スライダー -->
+    <link rel="stylesheet" type="text/css" href="../css/plugin/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/plugin/slick-theme.css">
+    <!--言語切り替え-->
+    <script type="text/javascript">
+        window.onload = function () {
+            // --- ブラウザのデフォルト言語を取得して初回の表示 ----- 
+            var wDef = (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0, 2);
+            langSet(wDef);
+        }
+    </script>
+    <!-- FOUTを防ぐため-->
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementsByTagName("html")[0].classList.add("loading-delay");
+        }, 3000);
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">header('works-contents');</script>
+    <div class="works-contents">
+        <div class="thumbnail">
+            <script type="text/javascript">
+                workthumbnailtop(11);
+            </script>
+        </div>
+        <div class="article-container">
+            <div class="video-container">
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/473767669" width="640" height="564" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="caption-container">
+                <div class="caption">
+                    <div class="caption-title">ここ</div>
+                    <div>Yuto Hayashi<br>2020 / video<br>
+                    </div>
+                </div>
+            </div>
+            <div class="caption-space"></div>
+
+            <div class="article-space"></div>
+            <div class="article-text">
+                -
+            </div>
+            <div class="article-text">-</div>
+            <div class="article-text">
+                -
+            </div><!-- 更新2020/11/1 -->
+        </div>
+        <div class="bottom-container">
+            <div class="thumbnail">
+                <script type="text/javascript">
+                    workthumbnailbottom(11);
+                </script>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">copyright();</script>
+    <!-- スライドショーのjs -->
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slideshow').slick({
+                autoplay: true, //自動再生
+                autoplaySpeed: 3000,
+                //adaptiveHeight: true,
+                arrows: false,
+                dots: true, //ドットのナビゲーションを表示
+                infinite: true, //スライドのループ有効化
+                speed: 700, //切り替えのスピード（小さくすると速くなる）
+                fade: true, //フェードの有効化
+                waitForAnimate: false,
+            });
+        });
+    </script>
+</body>
+
+</html>
