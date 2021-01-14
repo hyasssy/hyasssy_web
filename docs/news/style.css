@@ -58,6 +58,10 @@
   transition: 0.5s;
   visibility: hidden;
 }
+.acd-content img {
+  width: 50%;
+  min-width: 27rem;
+}
 .acd-check:checked ~ .acd-content {
   margin-top: 0.2rem;
   height: auto;
