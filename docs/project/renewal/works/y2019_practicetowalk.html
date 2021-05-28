@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Works | Yuto Hayashi</title>
+    <link rel="icon" type="image/x-icon" href="../img/vrhayashi.png">
+    <meta name="author" author="Yuto Hayashi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/plugin/normalize.css">
+    <link rel="stylesheet" href="../css/common-style.css">
+    <link rel="stylesheet" href="works-common-style.css">
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/works_template.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'uda2lvx',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!-- スライダー -->
+    <link rel="stylesheet" type="text/css" href="../css/plugin/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/plugin/slick-theme.css">
+    <!--言語切り替え-->
+    <script type="text/javascript">
+        window.onload = function () {
+            // --- ブラウザのデフォルト言語を取得して初回の表示 ----- 
+            var wDef = (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0, 2);
+            langSet(wDef);
+        }
+    </script>
+    <!-- FOUTを防ぐため-->
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementsByTagName("html")[0].classList.add("loading-delay");
+        }, 3000);
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">header('works-contents');</script>
+    <div class="works-contents">
+        <div class="thumbnail">
+            <script type="text/javascript">
+                workthumbnailtop(8);
+            </script>
+        </div>
+        <div class="article-container">
+            <div class="video-container">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KBaWHcB7fEA" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="caption-container">
+                <div class="caption">
+                    <div class="caption-title">Practice to walk</div>
+                    <div>Yuto Hayashi<br>2020 / video<br>
+                    </div>
+                </div>
+            </div>
+            <div class="caption-space"></div>
+
+            <div class="article-space"></div>
+            <div class="article-text">
+                ユーラシア大陸横断の旅の中で制作した映像です。<br>
+                20世紀以降、飛行機の発明や電波通信の普及によって、私たちは空間の圧縮された世界に住んでいます。<br>
+                飛行機は都市と都市を、その間の道のりを無視して繋ぎます。それはまるでリンクによってWEBサイトをパチパチと移りゆくインターネット空間のようです。<br>
+                しかし実際にはインターネットは本質的に現実世界とは異なり、この世界には確かに道や海が存在しているはずなのです。インターネット化する世界の中で私は何かをとりこぼし続けていることを感じ、世界の広さ（あるいは狭さ）、その距離感を掴むためになるべく陸路でユーラシア大陸を横断するプロジェクトを立てました。<br>
+
+                この映像はその旅の中で、ベトナムのホイアンから日本に向かって歩き、そこにあるはずだった海と途切れた道のことを考えて制作しました。<br>
+            </div>
+            <div class="article-text">-</div>
+            <div class="article-text">
+                This video was made from my long travel crossing the Eurasian continent. <br>
+                In the 20th century, humans get flight technique, and people have come to move without consciousness for
+                the road and process between cities. <br>
+                This video was made for the roads and sea which are ignored in such a world. <br>
+            </div><!-- 更新2020/11/1 -->
+        </div>
+        <div class="bottom-container">
+            <div class="thumbnail">
+                <script type="text/javascript">
+                    workthumbnailbottom(8);
+                </script>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">copyright();</script>
+    <!-- スライドショーのjs -->
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slideshow').slick({
+                autoplay: true, //自動再生
+                autoplaySpeed: 3000,
+                //adaptiveHeight: true,
+                arrows: false,
+                dots: true, //ドットのナビゲーションを表示
+                infinite: true, //スライドのループ有効化
+                speed: 700, //切り替えのスピード（小さくすると速くなる）
+                fade: true, //フェードの有効化
+                waitForAnimate: false,
+            });
+        });
+    </script>
+</body>
+
+</html>

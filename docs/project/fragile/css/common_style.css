@@ -7,11 +7,11 @@
   font-weight: 400;
 }
 
-@font-face {
+/* @font-face {
   font-family: "YuGo";
   src        : url(../fonts/Yugo_B_forButton.woff);
   font-weight: 500;
-}
+} */
 
 @font-face {
   font-family: "YuGo";
