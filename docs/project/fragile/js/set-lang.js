@@ -160,7 +160,11 @@ What is the answer to the loneliness of an 80 year old man?`
     },
     text10: {
         ja: `東京藝術大学油画→大学院メディア映像研究科/Media Artist: 身体・距離・バーチャルについて研究・制作/2019ユーラシア大陸横断:石橋財団海外渡航プログラム/S.C.L.3期生:xR開発プログラム/UT-virtual5期生`,
-        en: ``
+        en: `Tokyo University of the Arts Oil painting → New Media
+Media Artist: Study and make about body/distance/virtual.
+Traveled crossing Eurasian continent supported by Ishibashi foundation(2019)
+Spacial Computing Lab 3rd member
+UT-Virtual 5th member`
     },
     text11: {
         ja: `自己紹介`,
@@ -188,20 +192,20 @@ What is the answer to the loneliness of an 80 year old man?`
     },
     text16: {
         ja: `2021/1/20 プロジェクトキックオフ、チームビルディング(3人)、ブレスト`,
-        en: ``
+        en: `2021 Jan. 20th, project kicks off, team building(3 member), brain storming`
     },
     text17: {
         ja: `2/19 新チーム発足 チームメンバーが現行の5人へ`,
-        en: ``
+        en: `Feb. 19th, team rebuilt. Number of the member: →5`
     },
     text18: {
         ja: `4月末 プロトタイプビルド`,
-        en: ``
+        en: `End of April, prototype built.`
     },
-    gallerycaption2: {
-        ja: `東京藝大-南カリフォルニア大学コラボ講評風景`,
-        en: `Tokyo National University of Fine Arts and Music - University of Southern California Collaboration Critique`
-    },
+    // gallerycaption2: {
+    //     ja: `東京藝大-南カリフォルニア大学コラボ講評風景`,
+    //     en: `Tokyo National University of Fine Arts and Music - University of Southern California Collaboration Critique`
+    // },
 }
 function button_en() {
     currentLang = "en";
