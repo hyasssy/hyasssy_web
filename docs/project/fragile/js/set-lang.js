@@ -94,21 +94,20 @@ Mentor: Fidelia Lam`
 カニエはその残酷な事実を充分に理解していた。
 現実か、幻覚か。
 80歳の老人が孤独の先に選んだ答えは。`,
-        en: `Sumire passed away in the hospital.
-In the same way, the ramune factory where he had worked for half his life went bankrupt.
-The new virus "Fragile" suddenly appeared and covered the world at a furious pace, leaving the old Kanie alone.
-With nothing to do but sleep and wake up again and again, his days are thirsty.
+        en: `Sumire passed away in the hospital and at the same time, the ramune factory where Kanie had worked for half his life went bankrupt.
+The new virus "Fragile" suddenly appeared and spread across the globe at a furious pace, leaving old Kanie alone.
+With nothing to do but sleep and wake up again and again, his days are lonely and wanting.
 Reality is so cruel.
 He no longer knew how to live.
 
 Then one day, Kanie meets a puppy.
-In contact with this innocent new life, he spends the first peaceful time in a long time.
-But at the same time, it was also a chance encounter with "Fragile.
-As the infection progresses day by day and his body becomes weaker and weaker, Kanie has a hallucination of Sumire.
-Sumire says, "I'm already dead. I'm already dead.
-Kanie was fully aware of the cruel truth.
+In contact with this innocent new life, he finds peace for the first time in a long time.
+But at the same time, it is also a chance encounter with "Fragile".
+As the infection progresses and his body becomes weaker and weaker, Kanie has a hallucination of Sumire.
+"I'm already dead. I'm already dead," says Sumire.
+Kanie is fully aware of the cruel truth.
 Reality or hallucination?
-What is the answer to the loneliness of an 80 year old man?`
+What is the answer to the loneliness of an 80-year old man? What does he do?`
     },
     text4: {
         ja: `2Dと3Dの融合したグラフィック`,
@@ -120,11 +119,11 @@ What is the answer to the loneliness of an 80 year old man?`
     },
     text5: {
         ja: `視点の制限とポストプロセスでの描画の調整により、2D素材を用いて3D空間を表現。UnityプロジェクトへのURPの導入と併せ、コスト・クオリティ・パフォーマンスを高いレベルで達成することを目指しました。`,
-        en: `By limiting the viewpoint and adjusting the post-processing rendering, we were able to create a 3D space using 2D materials, and with the introduction of URP into the Unity project, we were able to achieve a high level of cost and quality.`
+        en: `By limiting the viewpoint and adjusting the post-processing rendering, we were able to create a 3D space using 2D materials, and with the introduction of URP into the Unity project, we were able to achieve a high level of efficiency and quality.`
     },
     text5_sp: {
         ja: `視点の制限とポストプロセスでの描画の調整により、2D素材を用いて3D空間を表現。UnityプロジェクトへのURPの導入と併せ、コスト・クオリティ・パフォーマンスを高いレベルで達成することを目指しました。`,
-        en: `By limiting the viewpoint and adjusting the post-processing rendering, we were able to create a 3D space using 2D materials, and with the introduction of URP into the Unity project, we were able to achieve a high level of cost and quality.`
+        en: `By limiting the viewpoint and adjusting the post-processing rendering, we were able to create a 3D space using 2D materials, and with the introduction of URP into the Unity project, we were able to achieve a high level of efficiency and quality.`
     },
     text6: {
         ja: `オンラインベースでのチーム開発`,
@@ -151,12 +150,12 @@ What is the answer to the loneliness of an 80 year old man?`
         en: `text`
     },
     text9: {
-        ja: `サウンド`,
-        en: `text`
+        ja: `日々の変化、その徐々に狂っていく様を演出するために、Max for Liveの技術の使用や、vaporwaveやクラシック等ジャンル横断的に音楽的性質を参照するなど、さまざまな工夫を凝らしました。`,
+        en: `In order to create the daily changes and the gradual craziness of it, I used Max for Live technology, and referenced musical properties across genres such as vaporwave and classical music.`
     },
     text9_sp: {
-        ja: `テキスト`,
-        en: `text`
+        ja: `日々の変化、その徐々に狂っていく様を演出するために、Max for Liveの技術の使用や、vaporwaveやクラシック等ジャンル横断的に音楽的性質を参照するなど、さまざまな工夫を凝らしました。`,
+        en: `In order to create the daily changes and the gradual craziness of it, I used Max for Live technology, and referenced musical properties across genres such as vaporwave and classical music.`
     },
     text10: {
         ja: `東京藝術大学油画→大学院メディア映像研究科/Media Artist: 身体・距離・バーチャルについて研究・制作/2019ユーラシア大陸横断:石橋財団海外渡航プログラム/S.C.L.3期生:xR開発プログラム/UT-virtual5期生`,
@@ -167,20 +166,28 @@ Spacial Computing Lab 3rd member
 UT-Virtual 5th member`
     },
     text11: {
-        ja: `自己紹介`,
-        en: ``
+        ja: `1995年、中国・湖北省生まれ。2017年に湖北美術学院を卒業。2019年より東京藝術大学大学院映像研究科アニメーション専攻に留学。`,
+        en: `Born in Hubei, China in 1995. Graduated from Hubei Institute of Fine Arts in 2017. Studying at the Department of Animation at Tokyo University of the Arts Graduate School of Film and New Media from 2019.`
     },
     text12: {
-        ja: `自己紹介`,
-        en: ``
+        ja: `東京藝術大学音楽環境創造科在学中。プログラミングによる作曲、空間表現等を制作、研究。`,
+        en: `Currently a student at the Department of Music Environment Creation, Tokyo University of the Arts. `
     },
     text13: {
-        ja: `自己紹介`,
-        en: ``
+        ja: `トラックメーカー`,
+        en: `Track Maker`
     },
     text14: {
-        ja: `自己紹介`,
-        en: ``
+        ja: `生きものの「生・死」を主に扱い、残酷な世界の矛盾した事象に対して美しさや面白さを見出す作品を制作
+早稲田大学先進理工学部応用物理学科 B4
+同大 大学院 先進理工学研究科 物理学専攻・生命理工学専攻 上田研究室 所属
+猟師
+UT-Virtual 2期生`,
+        en: `Mainly dealing with "life and death" of living things, creating works that find beauty and interest in contradictory events in a cruel world.
+B4, Department of Applied Physics, School of Advanced Science and Engineering, Waseda University
+Ueda Laboratory, Department of Physics and Bioscience and Biotechnology, Graduate School of Advanced Science and Engineering, Waseda University
+Hunter
+UT-Virtual 2nd semester student`
     },
     text15: {
         ja: `メンター：Fidelia Lam（南カリフォルニア大学）

@@ -324,7 +324,7 @@
   width          : 100%;
   display        : flex;
   justify-content: space-between;
-  margin-bottom  : 3rem;
+  margin-bottom  : 5rem;
 }
 
 .memberbox_img {
@@ -476,7 +476,7 @@
   }
 
   .memberbox {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .memberbox_img {
