@@ -23,17 +23,23 @@
   font-weight: 300;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Futura";
   src        : url(../fonts/FuturaPT_Medium.otf);
   font-weight: 500;
-}
+} */
 
 @font-face {
   font-family: "YuGo";
   src        : url(../fonts/YuGothic_R_subset.ttf);
   font-weight: 400;
 }
+
+/* @font-face {
+  font-family: "YuGo";
+  src        : url(../fonts/YuGothic_L_subset.ttf);
+  font-weight: 300;
+} */
 
 @font-face {
   font-family: "Gothic";
@@ -57,7 +63,7 @@
   --basewhite        : rgb(252, 253, 252);
   --linkblue         : rgb(66, 115, 223);
   --linkhoverblue    : rgb(143, 183, 193);
-  /* --neutralgray   : rgb(140, 140, 140); */
+  --neutralgray      : rgb(140, 140, 140);
 }
 
 body,
@@ -95,46 +101,60 @@ a:active {
 
 .header {
   position            : fixed;
+  /* topの幅は調整の余地あり */
   top                 : 0;
   width               : calc(100% - 1.2rem);
   margin-left         : .6rem;
-  display             : flex;
-  justify-content     : space-between;
   /*下揃え*/
   /* background       : linear-gradient(180deg,
       rgba(252, 253, 252, 1) 0%,
       rgba(252, 253, 252, 1) 30%,
       rgba(252, 253, 252, 0) 100%); */
-  /* background-color : red; */
+  background-color    : red;
   z-index             : 100;
   color               : var(--titleblack);
 }
 
-.header a:link,
-.header a:visited {
+
+
+.myname {
+  top                : 0;
+  position           : absolute;
+  font-size          : 6.5vw;
+  font-weight        : 500;
+  letter-spacing     : 1.3vw;
+  font-family        : "GillSans";
+  /* background-color: blue; */
+  white-space        : nowrap;
+}
+
+.switchpage {
+  top                : 1.1vw;
+  right              : 0;
+  position           : absolute;
+  font-size          : 6vw;
+  font-family        : "Futura";
+  font-weight        : 200;
+  text-align         : right;
+  /* background-color: red; */
+}
+
+.switchpage a {
+  display: inline-block;
+}
+
+.switchpage a:link,
+.switchpage a:visited {
   color: var(--titleblack);
 }
 
-.header a:hover,
-.header a:active {
+.switchpage a:hover,
+.switchpage a:active {
   color           : var(--linkhoverblue);
   transform-origin: center right;
   transform       : scale(1.03);
 }
 
-.myname {
-  font-size     : 2.5rem;
-  line-height   : 2.6rem;
-  font-weight   : 600;
-  letter-spacing: 4px;
-  font-family   : "GillSans";
-}
-
-.switchpage {
-  font-size  : 2.5rem;
-  font-family: "Futura";
-  font-weight: 200;
-}
 
 
 
@@ -152,12 +172,16 @@ a:active {
 }
 
 @media screen and (min-width: 480px) {
-
   /*タブレットサイズ以上*/
-  .header-list {
-    font-size  : 2rem;
-    margin-left: 2.5rem;
-    display    : inline;
+
+  .myname {
+    font-size     : 2.5rem;
+    line-height   : 2.6rem;
+    letter-spacing: 4px;
+  }
+
+  .switchpage {
+    font-size: 2.5rem;
   }
 
   .copyright {
@@ -169,11 +193,7 @@ a:active {
 
   /*pcサイズ以上*/
   .header {
-    font-size  : 3rem;
-    line-height: 3.1rem;
+    font-size: 3rem;
   }
 
-  .header-list {
-    font-size: 2.4rem;
-  }
 }

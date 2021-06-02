@@ -3,6 +3,7 @@
   position: fixed;
   width   : 100vw;
   height  : 100%;
+  color   : var(--basewhite);
 }
 
 .bg-slider {
@@ -25,38 +26,100 @@
   height          : 100%;
 }
 
-#navcontainer {
-  position           : absolute;
-  width              : 100%;
-  /* background-color: red; */
-  height             : 0;
-  bottom             : 0;
+
+#navcontainer_top {
+  position: absolute;
+  width   : 100%;
+  height  : 0.1px;
+  top     : 0;
+  z-index : 99;
+}
+
+#nav_lang {
+  font-family: "Futura", "YuGo", sans-serif;
+  font-weight: 200;
+  font-size  : 6vw;
+  position   : absolute;
+  right      : 0.6rem;
+  top        : 0rem;
+}
+
+#nav_lang a {
+  cursor     : pointer;
+  white-space: nowrap;
+  display    : none;
+  color      : var(--basewhite);
+}
+
+#nav_lang a:hover {
+  color           : var(--linkhoverblue);
+  transform       : scale(1.1);
+  transform-origin: top right;
+}
+
+#nav_lang a:link,
+#nav_lang a:visited {
+  color: var(--basewhite);
+}
+
+#ja_button,
+#en_button {}
+
+#navcontainer_bottom {
+  position   : absolute;
+  width      : 100%;
+  height     : 0.1px;
+  bottom     : 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size  : 7vw;
+  z-index    : 999;
 }
 
 #nav_contact {
   position: absolute;
   left    : 0;
+  bottom  : 0;
 }
 
 #nav_links {
-  position: absolute;
-  margin  : 0 auto;
+  position              : absolute;
+  bottom                : 0;
+  left                  : 50%;
+  /* background-color   : red; */
+  /* transform          : translate(-50%, 0); */
 }
 
 #nav_cv {
   position: absolute;
   right   : 0;
+  bottom  : 0;
+}
+
+#nav_contact,
+#nav_links,
+#nav_cv {
+  color      : var(--basewhite);
+  cursor     : pointer;
+  white-space: nowrap;
+}
+
+#nav_contact:hover,
+#nav_links:hover,
+#nav_cv:hover {
+  color: var(--linkhoverblue);
 }
 
 #self-introduction {
-  width                     : 100%;
-  height                    : 100%;
-  color                     : rgb(252, 253, 252);
-  overflow-y                : scroll;
-  -webkit-overflow-scrolling: touch;
-  font-size                 : 30px;
-  word-wrap                 : break-word;
-  z-index                   : 999;
+  width                        : 100%;
+  height                       : 100%;
+  color                        : rgb(252, 253, 252);
+  overflow-y                   : scroll;
+  -webkit-overflow-scrolling   : touch;
+  font-size                    : 30px;
+  word-wrap                    : break-word;
+  z-index                      : 9;
+  /* background-color          : red; */
 }
 
 #self-introduction::-webkit-scrollbar {

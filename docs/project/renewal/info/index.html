@@ -6,7 +6,7 @@
   <title>Yuto Hayashi / 林 裕人</title>
   <link rel="icon" type="image/x-icon" href="../img/vrhayashi.png">
   <meta name="author" author="Yuto Hayashi">
-  <meta name="description" content="Yuto Hayashi | 林 裕人 Artist Website. @hyasssy">
+  <meta name="description" content="Yuto Hayashi | 林 裕人 @hyasssy Artist Website Information page">
   <meta name="keywords" content="Yuto Hayashi, 林裕人, メディアアート,東京藝大,VR,現代美術,contemporary art,アート,メディア映像, hyasssy, 藝大">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -22,6 +22,7 @@
   <link rel="stylesheet" type="text/css" href="./infostyle.css?date=210222">
   <script src="../js/plugin/jquery-1.12.4.min.js" type="text/javascript"></script>
   <script src="../js/bgswitcher.js"></script>
+  <script src="./setlang.js"></script>
   <script>
     jQuery(function ($) {
       $('.bg-slider').bgSwitcher({
@@ -49,19 +50,33 @@
   <!-- <script type="text/javascript">header('top');</script> -->
   <div class="header">
     <div class="myname">Yuto Hayashi</div>
-    <a href="../index.html">
-      <div class="switchpage">
-        >>WORKS|info
-      </div>
-    </a>
+    <div class="switchpage">
+      <a href="../index.html">
+        <div>
+          >>WORKS
+        </div>
+      </a>
+    </div>
   </div>
   <div class="fix">
     <div class="bg-slider">
       <div id="img-filter"></div>
-      <div id="navcontainer">
-        <div id="nav_contact">CONTACT?</div>
-        <div id="nav_links">LINKS</div>
-        <div id="nav_CV">CV</div>
+      <div id="navcontainer_top">
+        <div id="nav_lang">
+          <a id="en_button">EN</a>
+          <a id="ja_button">日本</a>
+        </div>
+      </div>
+      <div id="navcontainer_bottom">
+        <a id="nav_contact">
+          CONTACT?
+        </a>
+        <a id="nav_links">
+          LINKS
+        </a>
+        <a id="nav_cv">
+          CV
+        </a>
       </div>
       <div id="self-introduction">
         <div id="top-space">

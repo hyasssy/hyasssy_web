@@ -25,6 +25,11 @@
   z-index            : 99;
 }
 
+#lang_button_wrapper a:visited,
+#lang_button_wrapper a:link {
+  color: var(--textwhite);
+}
+
 #ja_button,
 #en_button {
   cursor     : pointer;
