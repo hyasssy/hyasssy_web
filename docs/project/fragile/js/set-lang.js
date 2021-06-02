@@ -49,7 +49,7 @@ const _data = {
     },
     info_left4: {
         ja: "言語",
-        en: "Languege"
+        en: "Language"
     },
     info_right4: {
         ja: "日本語/English",
@@ -118,11 +118,11 @@ What is the answer to the loneliness of an 80-year old man? What does he do?`
         en: `Blending of 2D and 3D graphics`
     },
     text5: {
-        ja: `視点の制限とポストプロセスでの描画の調整により、2D素材を用いて3D空間を表現。UnityプロジェクトへのURPの導入と併せ、コスト・クオリティ・パフォーマンスを高いレベルで達成することを目指しました。`,
+        ja: `視点の制限とポストプロセスでの描画の調整により、2D素材を用いて3D空間を表現。UnityプロジェクトへのURPの導入と併せ、コスト・クオリティ・パフォーマンスを高いレベルで達成することを目指しました。また多国籍チームにおいて、日本家屋などの文化の違いによる想像のズレをいかに擦り合わせていくかも時間をかけて注力したポイントです。`,
         en: `By limiting the viewpoint and adjusting the post-processing rendering, we were able to create a 3D space using 2D materials, and with the introduction of URP into the Unity project, we were able to achieve a high level of efficiency and quality.`
     },
     text5_sp: {
-        ja: `視点の制限とポストプロセスでの描画の調整により、2D素材を用いて3D空間を表現。UnityプロジェクトへのURPの導入と併せ、コスト・クオリティ・パフォーマンスを高いレベルで達成することを目指しました。`,
+        ja: `視点の制限とポストプロセスでの描画の調整により、2D素材を用いて3D空間を表現。UnityプロジェクトへのURPの導入と併せ、コスト・クオリティ・パフォーマンスを高いレベルで達成することを目指しました。また多国籍チームにおいて、日本家屋などの文化の違いによる想像のズレをいかに擦り合わせていくかも時間をかけて注力したポイントです。`,
         en: `By limiting the viewpoint and adjusting the post-processing rendering, we were able to create a 3D space using 2D materials, and with the introduction of URP into the Unity project, we were able to achieve a high level of efficiency and quality.`
     },
     text6: {
@@ -134,27 +134,27 @@ What is the answer to the loneliness of an 80-year old man? What does he do?`
         en: `Online based development`
     },
     text7: {
-        ja: `現在の状況を鑑み、プロジェクト進行の殆どをオンラインで行いました。プロジェクト初期段階では中国から参加していたメンバーもおり、様々な困難に直面しつつも距離に捉われない開発を行いました。`,
+        ja: `現在の状況を鑑み、プロジェクト進行の殆どをオンラインで行いました。プロジェクト初期段階では中国から参加していたメンバーもおり、様々な困難に直面しつつも距離に捉われない開発を行いました。オンラインで出来ることとその限界についてノウハウを得ることができました。`,
         en: `Considering the current situation, most of the project progress was done online. In the early stages of the project, some of the members came from China, and while we faced various difficulties, we were able to develop the project regardless of the distance.`
     },
     text7_sp: {
-        ja: `現在の状況を鑑み、プロジェクト進行の殆どをオンラインで行いました。プロジェクト初期段階では中国から参加していたメンバーもおり、様々な困難に直面しつつも距離に捉われない開発を行いました。`,
+        ja: `現在の状況を鑑み、プロジェクト進行の殆どをオンラインで行いました。プロジェクト初期段階では中国から参加していたメンバーもおり、様々な困難に直面しつつも距離に捉われない開発を行いました。オンラインで出来ることとその限界についてノウハウを得ることができました。`,
         en: `Considering the current situation, most of the project progress was done online. In the early stages of the project, some of the members came from China, and while we faced various difficulties, we were able to develop the project regardless of the distance.`
     },
     text8: {
-        ja: `サウンド`,
-        en: `text`
+        ja: `壊れていく日々のゲームサウンド`,
+        en: `Game Sound of Days of Brokenness`
     },
     text8_sp: {
-        ja: `サウンド`,
-        en: `text`
+        ja: `壊れていく日々のゲームサウンド`,
+        en: `Game Sound of Days of Brokenness`
     },
     text9: {
-        ja: `日々の変化、その徐々に狂っていく様を演出するために、Max for Liveの技術の使用や、vaporwaveやクラシック等ジャンル横断的に音楽的性質を参照するなど、さまざまな工夫を凝らしました。`,
+        ja: `日々徐々に状況が狂っていってしまう様を演出するために、Vaporwaveやクラシック等ジャンル横断的に音楽的性質を参照し、またゲームという形式に最適化できるようトライアンドエラーを繰り返しました。Max for Liveの技術を用いています。`,
         en: `In order to create the daily changes and the gradual craziness of it, I used Max for Live technology, and referenced musical properties across genres such as vaporwave and classical music.`
     },
     text9_sp: {
-        ja: `日々の変化、その徐々に狂っていく様を演出するために、Max for Liveの技術の使用や、vaporwaveやクラシック等ジャンル横断的に音楽的性質を参照するなど、さまざまな工夫を凝らしました。`,
+        ja: `日々徐々に状況が狂っていってしまう様を演出するために、Vaporwaveやクラシック等ジャンル横断的に音楽的性質を参照し、またゲームという形式に最適化できるようトライアンドエラーを繰り返しました。Max for Liveの技術を用いています。`,
         en: `In order to create the daily changes and the gradual craziness of it, I used Max for Live technology, and referenced musical properties across genres such as vaporwave and classical music.`
     },
     text10: {
