@@ -112,7 +112,7 @@ a:active {
       rgba(252, 253, 252, 1) 30%,
       rgba(252, 253, 252, 0) 100%); */
   background-color    : white;
-  z-index             : 100;
+  z-index             : 999;
   color               : var(--titleblack);
 }
 
