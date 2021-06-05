@@ -10,7 +10,7 @@ var defaultLang = (window.navigator.languages && window.navigator.languages[0]) 
     window.navigator.browserLanguage;
 var currentLang = defaultLang;
 $(document).ready(function () {
-    setlang();
+    settext();
     $('#ja_button').on('click', function () {
         button_ja();
         return false;
@@ -114,13 +114,13 @@ UT-Virtual 5th member`
 }
 function button_en() {
     currentLang = "en";
-    setlang();
+    settext();
 }
 function button_ja() {
     currentLang = "ja";
-    setlang();
+    settext();
 }
-function setlang() {
+function settext() {
     console.log("translate" + currentLang);
     if (currentLang == "ja") {
         $('#ja_button').css('display', 'none');

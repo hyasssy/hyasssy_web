@@ -1,4 +1,4 @@
-/*css of Top page*/
+/*css of INFO page*/
 .fix {
   position: fixed;
   width   : 100vw;
@@ -59,10 +59,10 @@
   transform-origin: top right;
 }
 
-#nav_lang a:link,
+/* #nav_lang a:link,
 #nav_lang a:visited {
   color: var(--basewhite);
-}
+} */
 
 #ja_button,
 #en_button {}
@@ -86,7 +86,7 @@
   position        : absolute;
   left            : 0.3rem;
   bottom          : 0;
-  transform-origin: bottom right;
+  transform-origin: bottom left;
 }
 
 #nav_links {
@@ -102,7 +102,7 @@
   position        : absolute;
   right           : 0.3rem;
   bottom          : 0;
-  transform-origin: bottom left;
+  transform-origin: bottom right;
 }
 
 
@@ -261,16 +261,21 @@
 
 .border {
   margin       : 12rem 0;
-  border-bottom: 1px solid rgb(177, 188, 190);
+  border-bottom: 1px solid var(--neutralgray);
 }
 
 #links_wrapper {
   margin-top: 8rem;
 }
 
+#links_wrapper a {
+  display: inline-block;
+}
+
 #links_wrapper a:hover,
 #links_wrapper a:active {
-  opacity: .4;
+  opacity  : .4;
+  transform: scale(1.1);
 }
 
 #links_hyasssy {
