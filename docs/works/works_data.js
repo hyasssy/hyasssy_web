@@ -56,8 +56,24 @@ const _textdata = {
 
 const _thumbnaildata = [//ここの並び順で並んでいく。
     {
+        root_id: "fragile",
+        img_url: "../img/thumbnails/t_fragile.jpg"
+    },
+    {
         root_id: "cisyn",
         img_url: "../img/thumbnails/t_cisyn.jpg"
+    },
+    {
+        root_id: "web_ga",
+        img_url: "../img/thumbnails/t_web_ga.jpg"
+    },
+    {
+        root_id: "web_okuyama",
+        img_url: "../img/thumbnails/t_web_okuyama.jpg"
+    },
+    {
+        root_id: "web_mp",
+        img_url: "../img/thumbnails/t_web_mp.jpg"
     },
     {
         root_id: "getclosemore",
@@ -140,6 +156,30 @@ const _documentdata = {
         imgs: ["../img/cisyn/img1.jpg", "../img/cisyn/img5.jpg", "../img/cisyn/img3.jpg"],
         topimgurl: "",
         topvideourl: "https://www.youtube.com/embed/9RZtiaJZQzg"
+    },
+    fragile: {
+        links: [{ id: "link_fragile", url: "https://hyasssy.tokyo/project/fragile/" }],
+        imgs: ["../img/fragile/img2.jpg", "../img/fragile/img4.jpg", "../img/fragile/img7.jpg", "../img/fragile/img6.jpg", "../img/fragile/img9.jpg"],
+        topimgurl: "",
+        topvideourl: "https://www.youtube.com/embed/bkVomLX833M"
+    },
+    web_ga: {
+        links: [{ id: "link_web_ga", url: "https://welcome.geidai.ac.jp/" }],
+        imgs: ["../img/web_ga/img2.jpg", "../img/web_ga/img3.jpg", "../img/web_ga/img4.jpg", "../img/web_ga/virtualtour.gif"],
+        topimgurl: "../img/web_ga/img1.jpg",
+        topvideourl: ""
+    },
+    web_okuyama: {
+        links: [{ id: "link_web_okuyama", url: "https://honoka-okuyama.com/" }],
+        imgs: ["../img/web_okuyama/img2.jpg", "../img/web_okuyama/img3.jpg"],
+        topimgurl: "../img/web_okuyama/img1.jpg",
+        topvideourl: ""
+    },
+    web_mp: {
+        links: [{ id: "link_web_mp", url: "https://fm.geidai.ac.jp/media-practice/2021/" }],
+        imgs: ["../img/web_mp/img2.jpg", "../img/web_mp/img3.jpg", "../img/web_mp/img4.jpg", "../img/web_mp/img5.jpg"],
+        topimgurl: "../img/web_mp/img1.jpg",
+        topvideourl: ""
     },
     getclosemore: {
         links: [],
@@ -236,6 +276,44 @@ const _documentdata = {
 }
 
 const _textdata = {
+    th_fragile: {
+        ja: `Fragile`,
+        en: `Fragile`
+    },
+    title_fragile: {
+        ja: `Fragile - Game Prototype`,
+        en: `Fragile - Game Prototype`
+    },
+    credit_fragile: {
+        ja: `2021 /  PC game
+ディレクター・エンジニア：林裕人
+アートワーク：許イ
+サウンド：田中小太郎、阿部浩大
+脚本：松永海
+メンター：Fidelia Lam`,
+        en: `2021 /  PC game
+Director / Engineer: Yuto Hayashi
+Artwork: Wei Xu
+Sound: Kodai Abe, Kotaro Tanaka
+Scenario: Kai Matsunaga
+Mentor: Fidelia Lam`
+    },
+    link_fragile: {
+        ja: ">>Link: Fragile website",
+        en: ">>Link: Fragile website"
+    },
+    text_fragile: {
+        ja: `2021年東京藝術大学大学院ゲームコース-南カリフォルニア大学ゲーム学科コラボレーションカリキュラム。
+妻を失い、悲しみにくれるおじいさん。飛来する新種のウィルス、犬と共に朽ちていく身体、そして現れるあの日のおばあさんーー
+ゲームプロジェクトをプロトタイプとして発表しました。`,
+        en: `2021 TUA - USC Game course Collaboration Production
+An old man grieves the death of his wife. He becomes afflicted with an unknown virus and his body deteriorates as does his dog’s. But then, his wife appears – the wife that he so sorely missed.
+GAME: Fragile - Prototype`
+    },
+    vcaption_fragile: {
+        ja: `Trailer`,
+        en: `Trailer`
+    },
     th_portfolio: {
         ja: `PORTFOLIO
         2020`,
@@ -255,6 +333,92 @@ const _textdata = {
         en: ">>Link (PDF about 20MB)"
     },
     text_portfolio: {
+        ja: ``,
+        en: ``
+    },
+    th_web_ga: {
+        ja: `welcome.geidai.ac.jp`,
+        en: `welcome.geidai.ac.jp`
+    },
+    title_web_ga: {
+        ja: `Welcome Stranger to this Place`,
+        en: `Welcome Stranger to this Place`
+    },
+    credit_web_ga: {
+        ja: `2021 /  Show website
+Design, Code: Yuto Hayashi`,
+        en: `2021 /  Show website
+Design, Code: Yuto Hayashi`
+    },
+    link_web_ga: {
+        ja: ">>Link: https://welcome.geidai.ac.jp/",
+        en: ">>Link: https://welcome.geidai.ac.jp/"
+    },
+    text_web_ga: {
+        ja: `東京藝術大学GA主催、陳列館展示“Welcome Stranger to this Place”の依頼を受け、Webサイトを制作しました。
+UXを考慮し、別ページのリンクを増やすことなく多くの情報をまとめました。
+関係者やターゲットに海外の方も含まれているため、英語対応しています。
+また現在の状況を意識し、展示空間をキャプチャーしたバーチャルツアーを制作し、設置しました。`,
+        en: `I was commissioned to create a website for the exhibition "Welcome Stranger to this Place" at the Tokyo University of the Arts.
+In consideration of UX, I compiled a lot of information without adding links to other pages.
+The website is also available in English.
+I also created and installed a virtual tour that captures the exhibition space, keeping in mind the current situation.`
+    },
+    vcaption_web_ga: {
+        ja: ``,
+        en: ``
+    },
+    th_web_okuyama: {
+        ja: `honoka-okuyama.com`,
+        en: `honoka-okuyama.com`
+    },
+    title_web_okuyama: {
+        ja: `honoka-okuyama.com`,
+        en: `honoka-okuyama.com`
+    },
+    credit_web_okuyama: {
+        ja: `2021 /  Artist website for Honoka Okuyama
+direction, code: Yuto Hayashi
+design: Yuka Sato`,
+        en: `2021 /  Artist website for Honoka Okuyama
+direction, code: Yuto Hayashi
+design: Yuka Sato`
+    },
+    link_web_okuyama: {
+        ja: ">>Link: https://honoka-okuyama.com/",
+        en: ">>Link: https://honoka-okuyama.com/"
+    },
+    text_web_okuyama: {
+        ja: ``,
+        en: ``
+    },
+    vcaption_web_okuyama: {
+        ja: ``,
+        en: ``
+    },
+    th_web_mp: {
+        ja: `MEDIA PRACTICE 20-21`,
+        en: `MEDIA PRACTICE 20-21`
+    },
+    title_web_mp: {
+        ja: `MEDIA PRACTICE 20-21`,
+        en: `MEDIA PRACTICE 20-21`
+    },
+    credit_web_mp: {
+        ja: `2021
+Yuto Hayashi, Chiho Oka`,
+        en: `2021
+Yuto Hayashi, Chiho Oka`
+    },
+    link_web_mp: {
+        ja: ">>Link: https://fm.geidai.ac.jp/media-practice/2021/",
+        en: ">>Link: https://fm.geidai.ac.jp/media-practice/2021/"
+    },
+    text_web_mp: {
+        ja: ``,
+        en: ``
+    },
+    vcaption_web_mp: {
         ja: ``,
         en: ``
     },
