@@ -1,0 +1,352 @@
+/*css of INFO page*/
+.fix {
+  position: fixed;
+  width   : 100vw;
+  height  : 100%;
+  color   : var(--basewhite);
+}
+
+.bg-slider {
+  margin                : 4.6rem 0 0 0.6rem;
+  width                 : calc(100% - 1.2rem);
+  height                : calc(100% - 5.2rem);
+  /*height              : -webkit-fill-available - 0.6rem; /*iosのsafariでメニューバーに隠れてしまう問題解決*/
+  background-position   : center center;
+  background-size       : cover;
+  /* display            : flex;
+  align-items           : center;
+  justify-content       : center; */
+  position              : relative;
+}
+
+
+#img-filter {
+  background-color: rgba(96, 96, 189, 0.05);
+  position        : absolute;
+  width           : 100%;
+  height          : 100%;
+}
+
+
+#navcontainer_top {
+  position: absolute;
+  width   : 100%;
+  height  : 0.1px;
+  top     : 0;
+  z-index : 99;
+}
+
+#nav_lang {
+  font-family: "Futura", "YuGo", sans-serif;
+  font-weight: 200;
+  font-size  : 6vw;
+  position   : absolute;
+  right      : 0.6rem;
+  top        : 0rem;
+}
+
+#nav_lang a {
+  cursor     : pointer;
+  white-space: nowrap;
+  display    : none;
+  color      : var(--basewhite);
+}
+
+#nav_lang a:hover,
+#nav_lang a:active {
+  color           : var(--linkhoverblue);
+  transform       : scale(1.1);
+  transform-origin: top right;
+}
+
+/* #nav_lang a:link,
+#nav_lang a:visited {
+  color: var(--basewhite);
+} */
+
+#ja_button,
+#en_button {}
+
+#navcontainer_bottom {
+  position   : absolute;
+  width      : 100%;
+  max-width  : 96rem;
+  height     : 0.1px;
+  bottom     : 0;
+  left       : 50%;
+  transform  : translateX(-50%);
+  font-family: "Futura", sans-serif;
+  font-weight: 200;
+  font-size  : 6vw;
+  z-index    : 99;
+}
+
+
+#nav_cv {
+  position        : absolute;
+  left            : 0.3rem;
+  bottom          : 0;
+  transform-origin: bottom left;
+}
+
+#nav_links {
+  position              : absolute;
+  bottom                : 0;
+  right                 : 50%;
+  transform-origin      : bottom center;
+  /* background-color   : red; */
+  /* transform          : translate(-50%, 0); */
+}
+
+#nav_contact {
+  position        : absolute;
+  right           : 0.3rem;
+  bottom          : 0;
+  transform-origin: bottom right;
+}
+
+
+#nav_contact,
+#nav_links,
+#nav_cv {
+  color      : var(--basewhite);
+  cursor     : pointer;
+  white-space: nowrap;
+}
+
+#nav_contact:hover,
+#nav_contact:active,
+#nav_links:hover,
+#nav_links:active,
+#nav_cv:hover,
+#nav_cv:active {
+  color    : var(--linkhoverblue);
+  transform: scale(1.1);
+}
+
+#content_wrapper {
+  position                  : absolute;
+  top                       : 0;
+  left                      : 0;
+  width                     : 100%;
+  height                    : 100%;
+  color                     : rgb(252, 253, 252);
+  overflow-y                : scroll;
+  scroll-behavior           : smooth;
+  -webkit-overflow-scrolling: touch;
+  font-size                 : 1.2rem;
+  line-height               : 1.6rem;
+  word-wrap                 : break-word;
+  z-index                   : 9;
+  font-weight               : 500;
+}
+
+#content_wrapper::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+#content_wrapper::-webkit-scrollbar-thumb {
+  background   : rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+#content_wrapper::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  background   : transparent;
+}
+
+#contentbox {
+  /* background-color          : red; */
+  position : absolute;
+  left     : 50%;
+  transform: translateX(-50%);
+  max-width: 96rem;
+  width    : 100%;
+}
+
+
+#space1 {
+  width              : 100%;
+  /* background-color: rgba(0, 255, 0, 0.5); */
+  position           : relative;
+}
+
+.down_arrow {
+  position: absolute;
+  bottom  : calc(-100vh + 10rem);
+  left    : 0.3rem;
+}
+
+.down_arrow img {
+  width  : 5vw;
+  opacity: 0.9;
+
+  /*上下アニメーション*/
+  animation-name           : float-arrow;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction      : alternate;
+  animation-duration       : 0.75s;
+}
+
+@keyframes float-arrow {
+
+  /*矢印アニメーション*/
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  100% {
+    transform: translate(0, 15px);
+  }
+}
+
+#title_name {
+  text-align    : center;
+  margin-top    : 44vh;
+  margin-bottom : 51vh;
+  letter-spacing: 1px;
+}
+
+#space2 {
+  width              : 100;
+  height             : 8rem;
+  /* background-color: red; */
+}
+
+
+#cv {}
+
+.content {
+  margin-left   : 0.6rem;
+  margin-right  : 0.6rem;
+  font-weight   : 400;
+  letter-spacing: 0.5px;
+  line-height   : 1.8rem;
+  font-size     : 1.2rem;
+  text-align    : justify;
+}
+
+.subtitle {
+  font-family        : "Futura", sans-serif;
+  font-weight        : 200;
+  font-size          : 5rem;
+  line-height        : 6rem;
+  /* background-color: blue; */
+  margin-bottom      : 2.6rem;
+}
+
+#cv_name {
+  margin-bottom: 3rem;
+}
+
+#cv_selfintro {
+  margin-bottom: 12rem;
+}
+
+.short-passage {}
+
+.cv_box {
+  display: flex;
+}
+
+.cv_year {
+  margin-right: 2.5rem;
+}
+
+#cv_showhistory {
+  margin-top   : 3rem;
+  margin-bottom: 0.2rem;
+}
+
+.border {
+  margin       : 12rem 0;
+  border-bottom: 1px solid var(--neutralgray);
+}
+
+#links_wrapper {
+  margin-top: 8rem;
+}
+
+#links_wrapper a {
+  display: inline-block;
+}
+
+#links_wrapper a:hover,
+#links_wrapper a:active {
+  opacity  : .4;
+  transform: scale(1.1);
+}
+
+#links_hyasssy {
+  margin-top: -4rem;
+}
+
+#links_wrapper img {
+  height       : 3rem;
+  margin-bottom: 3rem;
+  margin-right : 1.5rem;
+}
+
+.contact_space {
+  height: 1rem;
+}
+
+.copyright {
+  color         : rgb(252, 253, 252) !important;
+  padding-bottom: 15rem;
+}
+
+@media screen and (min-width: 480px) {
+
+  /*タブレットサイズ以降*/
+
+  #nav_lang {
+    font-size: 2.5rem;
+  }
+
+  .down_arrow {
+    bottom: calc(-98vh + 9rem);
+    left  : 0.3rem;
+  }
+
+  .down_arrow img {
+    width  : 3.5rem;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (min-width: 896px) {
+
+  /*PCサイズ以降*/
+  .down_arrow {
+    bottom: calc(-98vh + 11rem);
+    left  : 2.4rem;
+  }
+
+  .down_arrow img {
+    width  : 3.5rem;
+    opacity: 0.9;
+  }
+
+  #navcontainer_bottom {
+    font-size: 5.5rem;
+  }
+
+  #content_wrapper {
+    font-size: 1.6rem;
+  }
+
+  .content {
+    font-size     : 1.4rem;
+    letter-spacing: 1px;
+    line-height   : 2rem;
+  }
+
+  #links_wrapper img {
+    height       : 4rem;
+    margin-bottom: 4rem;
+    margin-right : 2rem;
+  }
+
+}

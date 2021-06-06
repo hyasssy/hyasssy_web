@@ -1,0 +1,205 @@
+/*共通CSS 最初に読み込む。*/
+@font-face {
+  font-family: "GillSans";
+  src        : url(../fonts/GillSansNova_Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GillSans";
+  src        : url(../fonts/GillSansNova_SemiBold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Futura";
+  src        : url(../fonts/FuturaPT_Light.otf);
+  font-weight: 200;
+}
+
+/* @font-face {
+  font-family: "Futura";
+  src        : url(../fonts/FuturaPT_Book.otf);
+  font-weight: 300;
+} */
+
+@font-face {
+  font-family: "TitleFutura";
+  src        : url(../fonts/FuturaPT_Medium.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "YuGo";
+  src        : url(../fonts/YuGothic_R_subset.ttf);
+  font-weight: 400;
+}
+
+/* @font-face {
+  font-family: "YuGo";
+  src        : url(../fonts/YuGothic_L_subset.ttf);
+  font-weight: 300;
+} */
+
+@font-face {
+  font-family: "Gothic";
+  src        : url(../fonts/ChuGo_subset.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gothic";
+  src        : url(../fonts/FutoGo_subset.otf);
+  font-weight: 600;
+}
+
+
+
+:root {
+  --titleblack       : rgb(0, 0, 14);
+  /* --titlehoverblue: rgb(143, 183, 193); */
+  /*rgb(94, 81, 238);*/
+  --baseblack        : rgb(84, 89, 90);
+  --basewhite        : rgb(252, 253, 252);
+  --linkblue         : rgb(66, 115, 223);
+  --linkhoverblue    : rgb(143, 183, 193);
+  --neutralgray      : rgb(140, 140, 140);
+}
+
+body,
+html {
+  margin     : 0;
+  padding    : 0;
+  height     : 100%;
+  font-size  : 10px;
+  color      : var(--baseblack);
+  font-family: "GillSans", "Gothic", sans-serif;
+  font-weight: 600;
+  /*ニュートラル*/
+}
+
+html {
+  visibility: hidden;
+}
+
+
+a {
+  text-decoration: none;
+  transition     : 0.3s;
+  color          : var(--linkblue);
+}
+
+a:link,
+a:visited {
+  color: var(--linkblue);
+}
+
+a:hover,
+a:active {
+  color: var(--linkhoverblue);
+}
+
+.header {
+  position            : fixed;
+  /* topの幅は調整の余地あり */
+  top                 : 0;
+  width               : calc(100% - 1.2rem);
+  height              : 3rem;
+  margin-left         : .6rem;
+  /*下揃え*/
+  /* background       : linear-gradient(180deg,
+      rgba(252, 253, 252, 1) 0%,
+      rgba(252, 253, 252, 1) 30%,
+      rgba(252, 253, 252, 0) 100%); */
+  background-color    : white;
+  z-index             : 999;
+  color               : var(--titleblack);
+}
+
+
+
+.myname {
+  top                : 0;
+  position           : absolute;
+  font-size          : 2.5rem;
+  font-weight        : 500;
+  letter-spacing     : 0.4rem;
+  font-family        : "GillSans";
+  /* background-color: blue; */
+  white-space        : nowrap;
+}
+
+.switchpage {
+  top                : 0.4rem;
+  right              : 0;
+  position           : absolute;
+  font-size          : 2.2rem;
+  font-family        : "Futura";
+  font-weight        : 200;
+  text-align         : right;
+  /* background-color: red; */
+}
+
+.switchpage a {
+  display: inline-block;
+}
+
+.switchpage a:link,
+.switchpage a:visited {
+  color: var(--titleblack);
+}
+
+.switchpage a:hover,
+.switchpage a:active {
+  color           : var(--linkhoverblue);
+  transform-origin: center right;
+  transform       : scale(1.03);
+}
+
+
+
+
+
+.copyright {
+  margin-top    : 20rem;
+  bottom        : 1px;
+  width         : 100%;
+  text-align    : center;
+  font-family   : "Futura", sans-serif;
+  font-size     : 1rem;
+  letter-spacing: 1px;
+  font-weight   : 200;
+  color         : var(--neutralgray);
+}
+
+@media screen and (min-width: 480px) {
+  /*タブレットサイズ以上*/
+
+  .header {
+    height: 3.7rem;
+  }
+
+  .myname {
+    font-size     : 3.3rem;
+    line-height   : 2.6rem;
+    letter-spacing: 0.55rem;
+  }
+
+  .switchpage {
+    top      : 0.05rem;
+    font-size: 3rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 896px) {
+
+  /*pcサイズ以上*/
+  .header {
+    font-size: 3rem;
+  }
+
+}

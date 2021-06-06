@@ -1,24 +1,31 @@
 制作メモ
 
-▼次にやること
-・テスト
-・Newsの文字ちっちゃ過ぎ
-・Worksのサムネ改善
-・全体的に色が地味。もうちょい情報量増やして良いと思う。
-・Newsをブログ化する。重要情報は残すようにして、それ以外は下にどんどん積んでいくような方式
+▼新しい記事を差し込むときに必要になるものまとめ
+- 作品タイトル
+- Video
+  - Youtube embed URL
+  - caption(必要に応じて)
+- images
+  - Topimage(Videoなければ)
+  - Thumbnail(幅高さ1000はやっぱり欲しいかな)
+  - 下に載せるImages
+- Text
+  - Title
+  - Credit(制作年、メンバー、素材、展示歴など)
+  - Links(URL, テキスト)
+  - Description(好きなこと書く。)
+
+
+
+
+▼次に検討こと
+・NEWS的なものを組み込むには?SNSの埋め込みがいいか?
+SNSの埋め込み。
+・Worksに閉じるUIを設置検討。
+・クリックしたパネルを暗いので固定するのを検討。
+・サムネのタイトルのレイアウトを検討。
+・youtubeの上にあるUIボタン(a要素)が機能してくれない問題
 
 ▼参考
-・高田冬彦
-http://fuyuhikotakata.com/works/Dream%20Catcher
-・屋上
-https://okujoh.space/
-・Vacances
-https://euskeoiwa.com/2020vacances/
-・ SANKOU:動き・エフェクト・アニメーション
-https://sankoudesign.com/category/motion-effect/
-
-
-・スクロールバーカスタマイズ
-https://tree-file.com/web-design/customize-scrollbars-css/
 
 
