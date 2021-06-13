@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Yuto Hayashi | 林 裕人</title>
+  <link rel="icon" type="image/x-icon" href="../img/vrhayashi.png">
+  <meta name="author" author="Yuto Hayashi">
+  <meta name="description" content="Yuto Hayashi | 林 裕人 @hyasssy Artist Website Information page">
+  <meta name="keywords" content="Yuto Hayashi, 林裕人, メディアアート,東京藝大,VR,現代美術,contemporary art,アート,メディア映像, hyasssy, 藝大">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!-- OGPの設定 -->
+  <meta property="og:title" content="Yuto Hayashi">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Yuto Hayashi | 林 裕人 @hyasssy Artist Website Information page">
+  <meta property="og:url" content="https://hyasssy.tokyo/">
+  <meta property="og:image" content="https://hyasssy.tokyo/img/portrait.jpg">
+
+  <link rel=" stylesheet" type="text/css" href="../css/plugin/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../css/common_style.css?date=210607">
+  <link rel="stylesheet" type="text/css" href="./infostyle.css?date=210607">
+  <script src="../js/plugin/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <script src="../js/plugin/bgswitcher.js"></script>
+  <script src="./setlang.js?date=210607" defer></script>
+  <script>
+    jQuery(function ($) {
+      $('.bg-slider').bgSwitcher({
+        images: ['./topimgs/img2.jpg', './topimgs/img1.jpg', './topimgs/img3.jpg', './topimgs/img4.jpg', './topimgs/img5.jpg'], // 切り替える背景画像を指定
+        interval: 4000, // 背景画像を切り替える間隔を指定 msec 3000=3秒
+        loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+        shuffle: false, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+        effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+        duration: 800, // エフェクトの時間を指定します。
+        easing: "swing" // エフェクトのイージングをlinear,swingから指定
+      });
+    });
+  </script>
+
+  <!-- FOUTを防ぐため-->
+  <script type="text/javascript">
+    setTimeout(function () {
+      $("html").css({ visibility: "visible" });
+      $("body").hide().css({ visibility: "visible" }).fadeIn(1800);
+    }, 500);
+  </script>
+</head>
+
+<body>
+  <!-- <script type="text/javascript">header('top');</script> -->
+  <div class="header">
+    <div class="myname">Yuto Hayashi</div>
+    <div class="switchpage">
+      <a href="../index.html?date=210607">
+        <div>
+          >>WORKS
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="fix">
+    <div class="bg-slider">
+      <div id="img-filter"></div>
+      <div id="navcontainer_top">
+        <div id="nav_lang">
+          <a id="en_button">EN</a>
+          <a id="ja_button">日本</a>
+        </div>
+      </div>
+      <div id="navcontainer_bottom">
+        <a id="nav_cv" href="#cv">
+          CV
+        </a>
+        <a id="nav_links" href="#links">
+          LINKS
+        </a>
+        <a id="nav_contact" href="#contact">
+          CONTACT?
+        </a>
+      </div>
+      <div id="content_wrapper">
+        <div id="contentbox">
+          <div id="space1">
+            <div class="down_arrow"><img src="./icons/downArrow_white.svg" alt="Down Arrow Icon"></div>
+          </div>
+
+          <div id="title_name">林 裕人 | Yuto Hayashi</div>
+
+          <div id="space2"></div>
+          <div id="cv" class="content">
+            <div class="subtitle">CV</div>
+            <div id="cv_name">
+              林 裕人 | Yuto Hayashi
+            </div>
+            <div id="cv_selfintro">
+              1997年生まれ。東京藝術大学油画→大学院メディア映像研究科/
+              身体・距離・バーチャルについて研究・制作/2019ユーラシア大陸横断:石橋財団海外渡航プログラム/S.C.L.3期生:xR開発プログラム/UT-virtual5期生
+            </div>
+
+            <div class="cv_box">
+              <div class="cv_year">1997</div>
+              <div class="cv_text" id="cv_text1">東京多摩地区生まれ。新興住宅地で育つ</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2016</div>
+              <div class="cv_text" id="cv_text2">桐朋高校卒業</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2019</div>
+              <div class="cv_text" id="cv_text3">株式会社DonutsでVtuber企画エンジニア勤務</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2019</div>
+              <div class="cv_text" id="cv_text4">石橋財団海外渡航プログラムの助成を受けユーラシア大陸横断を達成</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2020</div>
+              <div class="cv_text" id="cv_text5">東京藝術大学美術学部油画専攻卒業</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2020</div>
+              <div class="cv_text" id="cv_text6">東京藝術大学映像学部修士メディア映像専攻入学</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2020</div>
+              <div class="cv_text" id="cv_text7">浅草おでん大多福VRプロジェクト<br><br><br></div>
+            </div>
+            <div id="cv_showhistory">展示歴</div>
+            <div class="cv_box">
+              <div class="cv_year">2015</div>
+              <div class="cv_text" id="cv_showtext1">タチ美大作展示 金賞受賞（東京）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2016</div>
+              <div class="cv_text" id="cv_showtext2">上野商店街展示（東京）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2017</div>
+              <div class="cv_text" id="cv_showtext3">ターナーギャラリー5人展（東京）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2018</div>
+              <div class="cv_text" id="cv_showtext4">KURUMI gallery『LOCI』展示（東京）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2019</div>
+              <div class="cv_text" id="cv_showtext5">3331Arts Chiyoda『NI/O』展示（東京）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2019</div>
+              <div class="cv_text" id="cv_showtext6">コートヤード広尾『禁足地』展示（東京）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2019</div>
+              <div class="cv_text" id="cv_showtext7">石橋財団奨学生成果報告展示（東京）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2019</div>
+              <div class="cv_text" id="cv_showtext8">東京藝術大学油画ギャラリー『はやしとかずま』展示（東京）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2020</div>
+              <div class="cv_text" id="cv_showtext9">東京藝術大学卒業制作展示（東京）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2020</div>
+              <div class="cv_text" id="cv_showtext10">東京藝大メディア映像研究科『OPEN STUDIO 2020』（WEB展示）</div>
+            </div>
+            <div class="cv_box">
+              <div class="cv_year">2021</div>
+              <div class="cv_text" id="cv_showtext11">東京藝大メディア映像研究科『MEDIA PRACTICE 20-21』（横浜）</div>
+            </div>
+            <div id="cv_last">など</div>
+            <div class="border"></div>
+          </div>
+          <div id="links" class="content">
+            <div class="subtitle">LINKS</div>
+            <div id="links_hyasssy">@hyasssy</div>
+            <div id="links_wrapper">
+              <a href="https://www.instagram.com/hyasssy/" target="_blank">
+                <img src="./icons/icon_i.svg" alt="icon">
+              </a>
+              <a href="https://twitter.com/hyasssy" target="_blank">
+                <img src="./icons/icon_t.svg" alt="icon">
+              </a>
+              <br>
+              <a href="https://note.com/hyasssy" target="_blank">
+                <img src="./icons/icon_n.svg" alt="icon">
+              </a>
+              <br>
+              <a href="https://github.com/hyasssy" target="_blank">
+                <img src="./icons/icon_g.svg" alt="icon">
+              </a>
+              <a href="https://www.youtube.com/channel/UCk9iI_FXpAn2ofcBQ0T_06w/featured" target="_blank">
+                <img src="./icons/icon_y.svg" alt="icon">
+              </a>
+            </div>
+            <!-- インスタ入れても良いな -->
+            <div class="border"></div>
+          </div>
+          <div id="contact" class="content">
+            <div class="subtitle">CONTACT?</div>
+            <div>林 裕人 | Yuto Hayashi</div>
+            <div class="contact_space"></div>
+            <div>Mail: <a href="mailto:hyasssy@gmail.com?subject=林裕人宛">hyasssy@gmail.com</a></div>
+          </div>
+          <div class="copyright">
+            ©️ 2020, Yuto Hayashi
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
