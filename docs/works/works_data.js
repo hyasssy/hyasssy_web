@@ -64,6 +64,10 @@ const _thumbnaildata = [//ここの並び順で並んでいく。
         img_url: "./img/thumbnails/t_cisyn.jpg"
     },
     {
+        root_id: "getclosemore",
+        img_url: "./img/thumbnails/t_getclosemore.jpg"
+    },
+    {
         root_id: "web_ga",
         img_url: "./img/thumbnails/t_web_ga.jpg"
     },
@@ -76,16 +80,16 @@ const _thumbnaildata = [//ここの並び順で並んでいく。
         img_url: "./img/thumbnails/t_web_mp.jpg"
     },
     {
-        root_id: "getclosemore",
-        img_url: "./img/thumbnails/t_getclosemore.jpg"
-    },
-    {
         root_id: "lumiere",
         img_url: "./img/thumbnails/t_lumiere.jpg"
     },
     {
         root_id: "fts_photo",
         img_url: "./img/thumbnails/t_fts_photo.jpg"
+    },
+    {
+        root_id: "odenvr",
+        img_url: "./img/thumbnails/t_odenvr.jpg"
     },
     {
         root_id: "koko",
@@ -153,7 +157,7 @@ const _documentdata = {
     },
     cisyn: {
         links: [{ id: "link_cisyn", url: "https://caniseeyounow.tokyo/" }],
-        imgs: ["./img/cisyn/img1.jpg", "./img/cisyn/img5.jpg", "./img/cisyn/img3.jpg"],
+        imgs: ["./img/cisyn/img1.jpg", "./img/cisyn/img5.jpg", "./img/cisyn/img3.jpg", "./img/cisyn/img4.jpg"],
         topimgurl: "",
         topvideourl: "https://www.youtube.com/embed/9RZtiaJZQzg"
     },
@@ -198,6 +202,12 @@ const _documentdata = {
         imgs: ["./img/fts_photo/img2.jpg", "./img/fts_photo/img3.jpg", "./img/fts_photo/img4.jpg", "./img/fts_photo/img5.jpg", "./img/fts_photo/img6.jpg", "./img/fts_photo/img7.jpg", "./img/fts_photo/img8.jpg", "./img/fts_photo/img9.jpg"],
         topimgurl: "./img/fts_photo/img1.jpg",
         topvideourl: ""
+    },
+    odenvr: {
+        links: [{ id: "link_odenvr", url: "https://otafuku.ne.jp/" }],
+        imgs: ["./img/odenvr/img1.jpg", "./img/odenvr/img2.jpg", "./img/odenvr/img3.jpg", "./img/odenvr/img4.jpg", "./img/odenvr/img5.jpg"],
+        topimgurl: "",
+        topvideourl: "https://www.youtube.com/embed/Opl4fnkx3CQ"
     },
     koko: {
         links: [],
@@ -584,6 +594,34 @@ Workshop during the stay in Tottori's old private house (2021)`
     vcaption_fts_photo: {
         ja: ``,
         en: ``
+    },
+    th_odenvr: {
+        ja: `おでんVR`,
+        en: `Oden VR`
+    },
+    title_odenvr: {
+        ja: `浅草おでん屋大多福VRサービスプロジェクト`,
+        en: `Asakusa Oden Otafuku VR Service Project`
+    },
+    credit_odenvr: {
+        ja: `2020 / VR
+林 裕人、橋本 憲明`,
+        en: `2020 / VR
+Yuto Hayashi, Noriaki Hashimoto`
+    },
+    link_odenvr: {
+        ja: ">>Link: 大多福HP",
+        en: ">>Link: Otafuku HP"
+    },
+    text_odenvr: {
+        ja: `浅草おでん屋大多福に、待ち時間などに体験することができるVRコンテンツを制作・導入させていただきました。Oculus Questを用いて最新のハンドトラッキング技術を導入し、軽快で接触の少なく、オペレーションも最小限に留めた形で体験可能になっています。
+大多福のおでん鍋の中を泳ぎ、様々なおでんに触れ合いながら情報を知ることができます。`,
+        en: `We created and implemented VR content for Asakusa Oden Otafuku to be experienced while waiting, using the latest hand tracking technology with Oculus Quest to make the experience nimble, contact-free, and with minimal operations.
+Visitors can swim through Otafuku's oden pots and learn information while interacting with the various oden.`
+    },
+    vcaption_odenvr: {
+        ja: `Trailer`,
+        en: `Trailer`
     },
     th_koko: {
         ja: `ここ`,

@@ -23,7 +23,8 @@ $(document).ready(function () {
 
 const _data = {
     cv_selfintro: {
-        ja: `1997年生まれ。東京藝術大学油画→大学院メディア映像研究科/身体・距離・バーチャルについて研究・制作/2019ユーラシア大陸横断:石橋財団海外渡航プログラム/S.C.L.3期生:xR開発プログラム/UT-virtual5期生`,
+        ja: `1997年生まれ。東京藝術大学油画→大学院メディア映像研究科/身体・距離・バーチャルについて研究・制作/2019ユーラシア大陸横断:石橋財団海外渡航プログラム/S.C.L.3期生:xR開発プログラム/UT-virtual5期生
+        Skills: UnityC#, Ps, Ai, Pr`,
         en: `Tokyo University of the Arts Oil painting → New Media
 Study and make about body/distance/virtual.
 Traveled crossing Eurasian continent supported by Ishibashi foundation(2019)
